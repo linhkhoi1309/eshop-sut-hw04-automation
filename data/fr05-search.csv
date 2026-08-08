@@ -1,0 +1,9 @@
+id,type,input,expected_count,expected_names,expected_behavior,assertion,spec_ref,hw02_ref,description
+A01,positive,,5,,grid_all,P2,FR-05 R1,FR-05 DT-01,Trang chu hien thi day du 5 san pham dang luoi
+A02,positive,,5,iPhone 15 Pro Max,card_fields,P1+P4+P6,FR-05 R2,FR-05 DT-01,Moi the san pham co anh ten va gia
+A03,positive,iPhone 15 Pro Max,1,iPhone 15 Pro Max,result_count,P2,FR-05 R3,FR-05 DT-01,Tim kiem chinh xac ten day du tra ve dung 1 san pham
+A04,positive,Mac,1,MacBook Pro M3,result_count,P2,FR-05 R3,FR-05 DT-02,Tim kiem mot phan ten tra ve MacBook Pro M3
+A05,positive,macbook,1,MacBook Pro M3,result_count,P2,FR-05 R3,FR-05 DT-02,Tim kiem khong phan biet hoa thuong
+A06,positive,Bàn phím,1,Bàn phím cơ Keychron Q1,result_count,P2,FR-05 R3,FR-05 DT-03,Tim kiem tieng Viet co dau
+A07,negative,zzzz-khong-ton-tai,0,,empty_state,P2+P3,FR-05 R6,FR-05 DT-06,Khong co ket qua phai hien thi thong bao empty state
+A08,edge,%,0,,result_count,P2,FR-05 R3 + SEC-05,FR-05 BVA-10,Ky tu % phai duoc hieu theo nghia den nen tra ve 0 ket qua
