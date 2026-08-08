@@ -7,3 +7,11 @@ A05,positive,macbook,1,MacBook Pro M3,result_count,P2,FR-05 R3,FR-05 DT-02,Tim k
 A06,positive,Bàn phím,1,Bàn phím cơ Keychron Q1,result_count,P2,FR-05 R3,FR-05 DT-03,Tim kiem tieng Viet co dau
 A07,negative,zzzz-khong-ton-tai,0,,empty_state,P2+P3,FR-05 R6,FR-05 DT-06,Khong co ket qua phai hien thi thong bao empty state
 A08,edge,%,0,,result_count,P2,FR-05 R3 + SEC-05,FR-05 BVA-10,Ky tu % phai duoc hieu theo nghia den nen tra ve 0 ket qua
+A09,edge,Mac_ook,0,,result_count,P2,FR-05 R3 + SEC-05,FR-05 BVA-11,Ky tu _ phai duoc hieu theo nghia den nen tra ve 0 ket qua
+A10,edge,' OR '1'='1,0,,result_count,P2,FR-05 R3 + SEC-05,FR-05 DT-12,Chuoi SQL injection phai duoc tim theo nghia den
+A11,negative,<script>alert(1)</script>,,,literal_echo,P1,FR-05 R4 + SEC-04,FR-05 DT-10,Tu khoa chua the script phai hien thi nhu van ban thuan
+A12,negative,<img src=x onerror=window.__xssExecuted=true>,,,no_script_exec,P7,FR-05 R4 + SEC-04,FR-05 DT-10,Payload XSS chu dong khong duoc thuc thi
+A13,gui,,5,,price_format,P6,FR-05 R2 + FR-21,FR-05 DT-01,Gia phai dung ky hieu dong va phan cach hang nghin
+A14,gui,Mac,,,single_h1,P2,FR-05 R7 + FR-21,FR-05 DT-01,Trang chu chi duoc co dung mot the h1
+A15,gui,,5,,alt_text,P4,FR-05 R2 + FR-24,FR-05 DT-01,Moi anh san pham phai co thuoc tinh alt mo ta
+A16,edge,Mac,,,loading_state,P3,FR-05 R5,FR-05 DT-07,Phai hien thi trang thai loading khi dang tai du lieu

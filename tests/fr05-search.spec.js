@@ -71,6 +71,86 @@ test.describe('@FR-05 Product listing & search', () => {
           break;
         }
 
+        /** P1 — an injected tag must be echoed as literal text, not parsed into the DOM (R4). */
+        case 'literal_echo': {
+          await home.searchAndWait(row.input);
+          await expect(home.searchEcho).toBeVisible();
+
+          // The term as the user sees it must equal the term they typed, character for
+          // character. If the app parsed it, the markup becomes elements and the visible
+          // text differs (e.g. "<script>alert(1)</script>" renders as "alert(1)").
+          await expect(
+            home.searchEcho,
+            'FR-05 R4 / SEC-04: the search term must be displayed as literal text',
+          ).toContainText(row.input);
+
+          // ...and no element from the payload may exist inside the echo region.
+          const injected = await home.searchEcho.locator('script, img, b, i, svg').count();
+          expect(injected, 'payload markup was parsed into DOM elements').toBe(0);
+          break;
+        }
+
+        /** P7 — page/JS state: an active payload must never execute (R4, SEC-04). */
+        case 'no_script_exec': {
+          await home.searchAndWait(row.input);
+          await expect(home.searchEcho).toBeVisible();
+
+          // The payload sets window.__xssExecuted from an onerror handler. A flag is used
+          // instead of alert() on purpose: a native dialog would block the whole run.
+          const executed = await page.evaluate(() => Boolean(window.__xssExecuted));
+          expect(executed, 'attacker-controlled JS executed from the search term').toBe(false);
+          break;
+        }
+
+        /** P6 — soft assertions: report every currency defect in one go (R2, FR-21). */
+        case 'price_format': {
+          const names = await home.visibleProductNames();
+          expect(names.length).toBe(Number(row.expected_count));
+
+          for (const name of names) {
+            const priceText = (await home.priceOf(name).innerText()).trim();
+            expect.soft(priceText, `FR-21: "${name}" price must use the ₫ symbol`).toMatch(/₫/);
+            expect
+              .soft(priceText, `FR-05 R2: "${name}" price must use thousand separators`)
+              .toMatch(/\d{1,3}([.,]\d{3})+/);
+          }
+          break;
+        }
+
+        /** P2 — exactly one <h1>, in the listing state and after searching (R7). */
+        case 'single_h1': {
+          await expect(home.allH1, 'FR-05 R7: home page must have exactly one <h1>').toHaveCount(1);
+          await home.searchAndWait(row.input);
+          await expect(
+            home.allH1,
+            'FR-05 R7: still exactly one <h1> after a search',
+          ).toHaveCount(1);
+          break;
+        }
+
+        /** P4 — attribute assertion: every product image needs a descriptive alt (R2, FR-24). */
+        case 'alt_text': {
+          const images = home.images();
+          await expect(images).toHaveCount(Number(row.expected_count));
+
+          for (let i = 0; i < Number(row.expected_count); i++) {
+            const alt = await images.nth(i).getAttribute('alt');
+            expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();
+          }
+          break;
+        }
+
+        /** P3 — visibility of a transient state, made observable by throttling the API (R5). */
+        case 'loading_state': {
+          await home.throttleProductsApi(1500);
+          await home.search(row.input);
+          await expect(
+            home.loadingState,
+            'FR-05 R5: a loading state must be shown while products are being fetched',
+          ).toBeVisible();
+          break;
+        }
+
         default:
           throw new Error(`Unhandled expected_behavior "${row.expected_behavior}" for ${row.id}`);
       }
