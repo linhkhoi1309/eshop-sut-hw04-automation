@@ -1,0 +1,640 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\playwright.config.js",
+    "rootDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23127396",
+      "Student ID": "23127396",
+      "Student name": "Luong Linh Khoi",
+      "Feature": "SMOKE",
+      "Run at (ISO)": "2026-08-08T16:47:32.022Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "SMOKE",
+          "Run at (ISO)": "2026-08-08T16:47:32.022Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "SMOKE",
+          "Run at (ISO)": "2026-08-08T16:47:32.022Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "SMOKE",
+          "Run at (ISO)": "2026-08-08T16:47:32.022Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/_smoke",
+          "open": "never",
+          "title": "Run by: 23127396 — SMOKE — 2026-08-08T16:47:32.022Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/_smoke/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "smoke.spec.js",
+      "file": "smoke.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@SMOKE Phase 0 environment",
+          "file": "smoke.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "web frontend serves the product listing",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:47:34.138Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3677,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:47:34.010Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:47:34.138Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-d7654b4589bdde6887d0",
+              "file": "smoke.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "admin frontend serves the login form",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:47:39.520Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2006,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:47:39.484Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:47:39.520Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-3ddcdfb4fd011363267d",
+              "file": "smoke.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "backend API returns the seeded catalogue",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:47:41.657Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:47:41.605Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:47:41.657Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-e145d2da6f2022da6f62",
+              "file": "smoke.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "web frontend serves the product listing",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:47:45.609Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17531,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:47:45.524Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:47:45.609Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-39b587e1d90c24fe825f",
+              "file": "smoke.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "admin frontend serves the login form",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:48:06.625Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15718,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:48:06.488Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:48:06.625Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-543d0ba47e55d357e121",
+              "file": "smoke.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "backend API returns the seeded catalogue",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:48:22.463Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 182,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:48:22.403Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:48:22.463Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-d16dbd5172eb78e4ee97",
+              "file": "smoke.spec.js",
+              "line": 26,
+              "column": 3
+            },
+            {
+              "title": "web frontend serves the product listing",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:48:26.906Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10880,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:48:26.833Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:48:26.906Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-ccb74e430a3a661f52e8",
+              "file": "smoke.spec.js",
+              "line": 15,
+              "column": 3
+            },
+            {
+              "title": "admin frontend serves the login form",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:48:40.812Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3514,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:48:40.754Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:48:40.812Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-580831795f2eb5117f11",
+              "file": "smoke.spec.js",
+              "line": 21,
+              "column": 3
+            },
+            {
+              "title": "backend API returns the seeded catalogue",
+              "ok": true,
+              "tags": [
+                "SMOKE"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-08T16:48:44.577Z"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 672,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T16:48:44.395Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-08T16:48:44.577Z"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2c14808d47b386fba9eb-b2cd0277993d0d9341e7",
+              "file": "smoke.spec.js",
+              "line": 26,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-08T16:47:32.036Z",
+    "duration": 73620.622,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

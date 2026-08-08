@@ -1,0 +1,15 @@
+# --- HW04 automation ---
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+*.log
+
+# SUT runtime state (reseeded by `node backend/database.js` before every run)
+backend/database.sqlite
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

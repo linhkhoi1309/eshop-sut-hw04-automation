@@ -1,0 +1,20 @@
+{
+  "name": "eshop-sut-hw04-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "HW04 - AI Automation Testing (Playwright, data-driven, multi-browser) on the EShop SUT - 23127396",
+  "scripts": {
+    "reset:db": "node backend/database.js",
+    "test": "playwright test",
+    "test:fr05": "playwright test --grep @FR-05",
+    "test:fr09": "playwright test --grep @FR-09",
+    "test:fr14": "playwright test --grep @FR-14",
+    "test:all-browsers": "node scripts/run-all.mjs",
+    "report:index": "node scripts/make-report-index.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  },
+  "author": "Luong Linh Khoi (23127396)"
+}
