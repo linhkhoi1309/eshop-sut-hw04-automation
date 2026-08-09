@@ -1,0 +1,98 @@
+[
+  {
+    "id": "B01",
+    "type": "positive",
+    "code": "SAVE10",
+    "total": 500000,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 50000, "final": 450000 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 percent formula",
+    "hw02_ref": "FR-09 DT-01",
+    "description": "SAVE10 giam 10% cua 500.000 phai la 50.000"
+  },
+  {
+    "id": "B02",
+    "type": "edge",
+    "code": "SAVE10",
+    "total": 300000,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 30000, "final": 270000 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 C3 (bien duoi, >=)",
+    "hw02_ref": "FR-09 BVA-02",
+    "description": "Tong bang dung nguong toi thieu 300.000 thi van duoc ap dung"
+  },
+  {
+    "id": "B03",
+    "type": "negative",
+    "code": "SAVE10",
+    "total": 299999,
+    "loggedIn": true,
+    "expect": { "outcome": "rejected", "messagePattern": "tối thiểu|ngưỡng|chưa đủ" },
+    "assertion": "P3+P5",
+    "spec_ref": "FR-09 C3 (min-1)",
+    "hw02_ref": "FR-09 BVA-01",
+    "description": "Tong duoi nguong 1 dong phai bi tu choi"
+  },
+  {
+    "id": "B04",
+    "type": "edge",
+    "code": "SAVE10",
+    "total": 300001,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 30000, "final": 270001 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 C3 (min+1)",
+    "hw02_ref": "FR-09 BVA-03",
+    "description": "Tren nguong 1 dong phai ap dung, giam lam tron xuong 30.000"
+  },
+  {
+    "id": "B05",
+    "type": "edge",
+    "code": "BIGBUY",
+    "total": 500000,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 50000, "final": 450000 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 C3 (bien duoi, >=)",
+    "hw02_ref": "FR-09 BVA-05",
+    "description": "BIGBUY tai dung nguong 500.000 phai duoc ap dung"
+  },
+  {
+    "id": "B06",
+    "type": "negative",
+    "code": "BIGBUY",
+    "total": 499999,
+    "loggedIn": true,
+    "expect": { "outcome": "rejected", "messagePattern": "tối thiểu|ngưỡng|chưa đủ" },
+    "assertion": "P3+P5",
+    "spec_ref": "FR-09 C3 (min-1)",
+    "hw02_ref": "FR-09 BVA-04",
+    "description": "BIGBUY duoi nguong 1 dong phai bi tu choi"
+  },
+  {
+    "id": "B07",
+    "type": "positive",
+    "code": "BIGBUY",
+    "total": 500001,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 50000, "final": 450001 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 fixed formula",
+    "hw02_ref": "FR-09 BVA-06",
+    "description": "BIGBUY tren nguong: giam co dinh 50.000"
+  },
+  {
+    "id": "B08",
+    "type": "positive",
+    "code": "VIP100",
+    "total": 400000,
+    "loggedIn": true,
+    "expect": { "outcome": "applied", "discount": 100000, "final": 300000 },
+    "assertion": "P1+P5",
+    "spec_ref": "FR-09 fixed formula",
+    "hw02_ref": "FR-09 DT-03",
+    "description": "VIP100 giam co dinh 100.000 khi tren nguong 300.000"
+  }
+]
