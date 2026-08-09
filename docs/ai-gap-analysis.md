@@ -1,0 +1,104 @@
+# AI gap analysis — what the AI got wrong, and why
+
+Required by §6 Task 1 ("report what the AI got wrong or missed, and explain *why*"). Every entry
+below is something that actually happened while building this suite, with the correction I made
+and a cause classified as **prompt quality**, **model limitation**, or **feature complexity**.
+
+Entries are added as they occur, not reconstructed at the end.
+
+---
+
+## G-01 · XSS case proved injection but not execution — FR-05 A12
+
+**Produced:** the first case list tested HTML injection with `<b>Mac</b>` and asserted the bold tag
+did not appear.
+**Wrong because:** FR-05 R4 + SEC-04 are about *unsafe rendering*, whose worst consequence is
+script execution. A markup-only payload can pass while an `onerror` payload still runs attacker
+code, so the case could go green over a live vulnerability.
+**Correction:** replaced with `<img src=x onerror=window.__xssExecuted=true>` and a page-state
+assertion (`window.__xssExecuted` must stay falsy). A JS flag is used rather than `alert()` because
+a native dialog blocks the whole run.
+**Result:** the flag came back **true** — proven code execution, which is materially stronger
+evidence than HW02's "markup is injected" finding.
+**Cause: model limitation.** The AI reached for the most common textbook payload rather than the
+one that discriminates between "escaped" and "executed".
+
+## G-02 · Loading-state case would have proved nothing — FR-05 A16
+
+**Produced:** search, then assert a loading indicator is visible.
+**Wrong because:** against a local API answering in ~20 ms the indicator (if implemented) may never
+be observed. The test would pass or fail on timing luck, and a green result would be meaningless.
+**Correction:** the test now throttles `**/api/products*` by 1.5 s via `page.route`, then asserts
+within that window — so the state is genuinely observable if it exists.
+**Cause: feature complexity.** Transient states need controlled conditions; the AI wrote the
+"obvious" test without asking whether the state could be seen at all.
+
+## G-03 · `getByRole('img')` would have made the alt-text check vacuous — FR-05 A15
+
+**Produced:** a Page Object exposing product images as `page.getByRole('img')`, following the
+role-locator guidance applied everywhere else.
+**Wrong because:** an `<img alt="">` is *presentational* — the accessibility tree drops it, so the
+role locator matches **zero** elements. The loop over images would then iterate nothing and the
+test would pass while every image was in breach of FR-24. A green test proving the opposite of the
+truth is the worst possible outcome.
+**Correction:** used `page.locator('img')` (a semantic tag, not a styling class) and added an
+explicit `toHaveCount(5)` so a wrong element count fails loudly.
+**Cause: model limitation.** A style rule ("prefer role locators") was applied without reasoning
+about the accessibility semantics that make the rule work — and precisely the defect under test is
+what breaks it.
+
+## G-04 · My own ad-hoc verification raced the app and produced a false reading
+
+**Produced:** a throwaway script to double-check the alt attributes reported `img count: 0`,
+which looked like "the page renders no images at all".
+**Wrong because:** the script navigated and queried immediately, while products are fetched
+asynchronously. The real test uses a retrying web-first assertion and correctly sees 5 images.
+**Correction:** treated the ad-hoc result as unreliable and re-verified through the suite before
+writing anything down. Had it gone unchecked, the bug report would have contained a fabricated
+claim.
+**Cause: model limitation.** The waiting discipline the AI applies inside the test suite was not
+applied to its own scratch script — the rigour was attached to the format, not to the reasoning.
+
+## G-05 · Cart state is destroyed by direct navigation — FR-09 fixture
+
+**Produced:** the natural first draft of a checkout journey is `page.goto('/checkout')`.
+**Wrong because:** `CartContext` keeps the cart in React state with no persistence, so any full
+page load empties it. Tests would then run against a total of 0 and coupon assertions would be
+meaningless.
+**Correction:** `addToCartAndOpenCheckout()` clicks Home → Giỏ hàng → Tiến hành thanh toán, using
+client-side navigation only. This was caught by reading `CartContext.jsx` **before** writing the
+fixture, not after a red run.
+**Cause: feature complexity.** The trap is invisible from the UI and from the URL structure; only
+the source reveals it.
+
+## G-06 · Expected value nearly taken from the app instead of the spec — FR-09 B04
+
+**Produced:** for SAVE10 on 300 001, an expected discount of `30 000.1`.
+**Wrong because:** money here is integral đồng and the value must be reasoned about (floor →
+30 000) *before* running the app. Leaving it unresolved invites the classic failure mode: run the
+test, see what the app says, call that the expectation — which would encode whatever the app does,
+bug included.
+**Correction:** computed 300 001 × 10 / 100 = 30 000.1 → floored to 30 000, with the reasoning
+written into `docs/fr09/R2-cases.md` so a reviewer can challenge it.
+**Cause: prompt quality.** My R2 prompt asked for expected values without stating the rounding
+convention, so the AI produced an un-runnable fraction rather than flagging the ambiguity.
+
+## G-07 · A case with nothing to assert — FR-09 B11
+
+**Produced:** "empty coupon code → expect an error message".
+**Wrong because:** the Apply button is disabled while the field is blank, so no message ever
+appears; the test would fail for a reason unrelated to what it claims to check.
+**Correction:** re-aimed at the observable fact — **no `/api/apply-coupon` request is sent** — a
+network assertion (pattern P5).
+**Cause: model limitation.** The AI pattern-matched "negative case → expect an error" instead of
+asking what is observable in that state.
+
+---
+
+## Cross-cutting observation
+
+Four of the seven entries (G-01, G-03, G-04, G-07) share one shape: the AI produced something
+**structurally correct and plausible-looking** — a payload, a locator, a script, a negative case —
+whose defect only shows up when you ask *"if the feature were broken, would this test actually
+notice?"*. Reviewing AI output for **discriminating power**, not for plausibility, is the habit
+this assignment has forced.
