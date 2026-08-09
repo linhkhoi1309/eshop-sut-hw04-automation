@@ -71,22 +71,29 @@ test.describe('@FR-05 Product listing & search', () => {
           break;
         }
 
-        /** P1 — an injected tag must be echoed as literal text, not parsed into the DOM (R4). */
+        /** P1 + P6 — an injected tag must be echoed as literal text, not parsed into the DOM (R4). */
         case 'literal_echo': {
           await home.searchAndWait(row.input);
           await expect(home.searchEcho).toBeVisible();
 
-          // The term as the user sees it must equal the term they typed, character for
-          // character. If the app parsed it, the markup becomes elements and the visible
-          // text differs (e.g. "<script>alert(1)</script>" renders as "alert(1)").
-          await expect(
-            home.searchEcho,
-            'FR-05 R4 / SEC-04: the search term must be displayed as literal text',
-          ).toContainText(row.input);
+          // Both facts are asserted softly so ONE run reports both halves of the defect:
+          // what the user sees, and what actually landed in the DOM. With hard assertions the
+          // first failure aborts the test and the bug report loses its strongest evidence.
+          const echoText = (await home.searchEcho.innerText()).trim();
+          const echoHtml = await home.searchEcho.innerHTML();
+          await testInfo.attach(`${row.id}-search-echo.html`, {
+            body: echoHtml,
+            contentType: 'text/html',
+          });
 
-          // ...and no element from the payload may exist inside the echo region.
+          expect
+            .soft(echoText, 'FR-05 R4 / SEC-04: the term must be displayed as literal text')
+            .toContain(row.input);
+
           const injected = await home.searchEcho.locator('script, img, b, i, svg').count();
-          expect(injected, 'payload markup was parsed into DOM elements').toBe(0);
+          expect
+            .soft(injected, `payload markup was parsed into DOM elements: ${echoHtml}`)
+            .toBe(0);
           break;
         }
 
