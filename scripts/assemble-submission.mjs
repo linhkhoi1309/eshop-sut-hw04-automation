@@ -9,7 +9,10 @@
  * Excluded from the zip: node_modules/, test-results/, .git/, Ref/, and the SUT's own
  * database file, none of which are deliverables.
  *
- * Usage: node scripts/assemble-submission.mjs   (run from hw04/)
+ * Two phases, because the PDFs are rendered from the Markdown *after* the images are in place:
+ *   node scripts/assemble-submission.mjs --copy-only   copy artifacts + write git-commit-log.txt
+ *   <render the PDFs with scripts/md2pdf.mjs>
+ *   node scripts/assemble-submission.mjs               verify everything, then build the zip
  */
 import { cpSync, existsSync, rmSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -18,6 +21,7 @@ import path from 'node:path';
 const REPO = process.cwd();
 const ROOT = path.resolve(REPO, '..');
 const NAME = '23127396_HW04_AI_Automation_090';
+const COPY_ONLY = process.argv.includes('--copy-only');
 
 /** repo-relative -> submission-root-relative */
 const COPY = [
@@ -47,6 +51,11 @@ for (const [from, to] of COPY) {
 const log = execFileSync('git', ['log', '--stat', '--date=iso'], { encoding: 'utf8' });
 writeFileSync(path.join(ROOT, 'git-commit-log.txt'), log);
 console.log(`wrote git-commit-log.txt (${log.split('\n').length} lines)`);
+
+if (COPY_ONLY) {
+  console.log('\n--copy-only: artifacts staged. Render the PDFs, then re-run without the flag.');
+  process.exit(0);
+}
 
 /** Everything the zip must contain, checked before it is built rather than after. */
 const REQUIRED = [
