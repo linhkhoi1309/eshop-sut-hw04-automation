@@ -1,0 +1,13 @@
+bug-01	[FR-09] Percent coupon inverts the discount formula and bills the customer ten times the order total	critical
+bug-02	[FR-05] Product search interpolates the term directly into SQL (injection; `%` and `_` act as wildcards)	critical
+bug-03	[FR-05] The search term is rendered as HTML, so injected JavaScript executes (XSS)	critical
+bug-04	[FR-14] Category write endpoints accept any authenticated user; the admin role is never checked	critical
+bug-05	[FR-09] `/api/apply-coupon` requires no authentication, which also defeats the per-user usage limit	high
+bug-06	[FR-09] A total exactly equal to `min_order_amount` is refused (threshold is exclusive)	high
+bug-07	[FR-14] A category name is never validated: empty and whitespace-only names are stored	high
+bug-08	[FR-14] Deleting a category leaves its products pointing at a category that no longer exists	high
+bug-09	[FR-05] A search that matches nothing shows no empty-state message	medium
+bug-10	[FR-05] Prices are rendered as `VND` instead of the required `₫`	low
+bug-11	[FR-05] The home page has two `<h1>` elements	low
+bug-12	[FR-05] Every product image has an empty `alt` attribute	low
+bug-13	[FR-05] No loading indicator while products are being fetched	low
