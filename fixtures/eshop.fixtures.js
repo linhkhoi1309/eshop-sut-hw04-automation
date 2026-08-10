@@ -54,6 +54,39 @@ export async function couponIdByCode(code) {
   return found.id;
 }
 
+/** Categories as the API sees them (public endpoint). */
+export async function listCategories() {
+  const ctx = await playwrightRequest.newContext({ baseURL: API });
+  const res = await ctx.get('/api/categories');
+  const body = await res.json();
+  await ctx.dispose();
+  return body;
+}
+
+/** Products as the API sees them (public endpoint). */
+export async function listProducts() {
+  const ctx = await playwrightRequest.newContext({ baseURL: API });
+  const res = await ctx.get('/api/products');
+  const body = await res.json();
+  await ctx.dispose();
+  return body;
+}
+
+/** Remove a category by name, ignoring absence — used to keep runs idempotent. */
+export async function deleteCategoryByName(name) {
+  const categories = await listCategories();
+  const target = categories.find?.((c) => c.name === name);
+  if (!target) return false;
+
+  const { token } = await apiLogin(SEED_ADMIN);
+  const ctx = await playwrightRequest.newContext({ baseURL: API });
+  await ctx.delete(`/api/categories/${target.id}`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  await ctx.dispose();
+  return true;
+}
+
 /**
  * Put a product in the cart and land on checkout using CLIENT-SIDE navigation only.
  *

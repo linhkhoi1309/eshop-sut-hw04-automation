@@ -1,0 +1,155 @@
+[
+  {
+    "id": "C01",
+    "type": "positive",
+    "mode": "list_seeded",
+    "expectedNames": ["Điện thoại", "Laptop", "Phụ kiện"],
+    "expect": { "outcome": "listed" },
+    "assertion": "P1+P2",
+    "spec_ref": "FR-14 R1 (Xem danh muc)",
+    "hw02_ref": "FR-14 DT-01",
+    "description": "Tab Danh muc liet ke day du 3 danh muc goc"
+  },
+  {
+    "id": "C02",
+    "type": "positive",
+    "mode": "create",
+    "name": "Máy tính bảng",
+    "expect": { "outcome": "created" },
+    "assertion": "P1+P2",
+    "spec_ref": "FR-14 R1 (Them danh muc)",
+    "hw02_ref": "FR-14 DT-02",
+    "description": "Them danh muc hop le thi xuat hien trong bang"
+  },
+  {
+    "id": "C03",
+    "type": "positive",
+    "mode": "create",
+    "nameRepeat": { "text": "Thiết bị điện tử gia dụng ", "length": 255 },
+    "expect": { "outcome": "created" },
+    "assertion": "P1",
+    "spec_ref": "FR-14 R1 (ten dai, tieng Viet)",
+    "hw02_ref": "FR-14 BVA-05",
+    "description": "Ten dai 255 ky tu tieng Viet phai duoc chap nhan va hien thi nguyen ven"
+  },
+  {
+    "id": "C04",
+    "type": "negative",
+    "mode": "create",
+    "name": "",
+    "expect": { "outcome": "refused" },
+    "assertion": "P2",
+    "spec_ref": "FR-14 R2 (ten bat buoc)",
+    "hw02_ref": "FR-14 DT-04",
+    "description": "Ten rong phai bi tu choi, khong tao them dong nao"
+  },
+  {
+    "id": "C05",
+    "type": "negative",
+    "mode": "create",
+    "name": "   ",
+    "expect": { "outcome": "refused" },
+    "assertion": "P2",
+    "spec_ref": "FR-14 R2 (ten chi co khoang trang)",
+    "hw02_ref": "FR-14 BVA-02",
+    "description": "Ten chi gom khoang trang cung phai bi tu choi"
+  },
+  {
+    "id": "C06",
+    "type": "probe",
+    "mode": "create_duplicate",
+    "name": "Laptop",
+    "expect": { "outcome": "probe" },
+    "assertion": "record-only",
+    "spec_ref": "FR-14 (khong quy dinh tinh duy nhat)",
+    "hw02_ref": "FR-14 DT-08",
+    "description": "Trung ten danh muc: dac ta khong quy dinh, chi ghi nhan ket qua"
+  },
+  {
+    "id": "C07",
+    "type": "negative",
+    "mode": "create_markup",
+    "name": "<b>Danh mục</b>",
+    "expect": { "outcome": "escaped" },
+    "assertion": "P1+P2",
+    "spec_ref": "SEC-04 (escape du lieu nguoi dung)",
+    "hw02_ref": "FR-14 DT-09",
+    "description": "Ten chua the HTML phai hien thi nhu van ban thuan"
+  },
+  {
+    "id": "C08",
+    "type": "positive",
+    "mode": "delete_created",
+    "name": "Danh mục tạm để xóa",
+    "expect": { "outcome": "deleted" },
+    "assertion": "P2",
+    "spec_ref": "FR-14 R1 (Xoa danh muc)",
+    "hw02_ref": "FR-14 DT-03",
+    "description": "Xoa danh muc vua tao thi dong bien mat khoi bang"
+  },
+  {
+    "id": "C09",
+    "type": "edge",
+    "mode": "delete_seeded_with_products",
+    "categoryId": 1,
+    "expect": { "outcome": "no_orphans" },
+    "assertion": "P5",
+    "spec_ref": "FR-15 (san pham thuoc danh muc co san)",
+    "hw02_ref": "FR-14 INTEG-01",
+    "description": "Xoa danh muc dang co san pham khong duoc de lai san pham mo coi"
+  },
+  {
+    "id": "C10",
+    "type": "positive",
+    "mode": "create_then_reload",
+    "name": "Danh mục bền vững",
+    "expect": { "outcome": "persisted" },
+    "assertion": "P1",
+    "spec_ref": "FR-14 R1 (luu phia server)",
+    "hw02_ref": "FR-14 DT-10",
+    "description": "Danh muc moi tao van con sau khi tai lai trang"
+  },
+  {
+    "id": "C11",
+    "type": "positive",
+    "mode": "create_then_check_product_form",
+    "name": "Danh mục cho sản phẩm",
+    "expect": { "outcome": "selectable" },
+    "assertion": "P1",
+    "spec_ref": "FR-15 (chon danh muc tu danh sach)",
+    "hw02_ref": "FR-14 INTEG-02",
+    "description": "Danh muc moi phai chon duoc trong form san pham"
+  },
+  {
+    "id": "C12",
+    "type": "negative",
+    "mode": "api_write_as_user",
+    "name": "Danh mục trái phép",
+    "expect": { "outcome": "http", "status": 403 },
+    "assertion": "P5",
+    "spec_ref": "FR-12 + SEC-03 (yeu cau role admin)",
+    "hw02_ref": "FR-14 DT-05",
+    "description": "Token nguoi dung thuong khong duoc phep tao danh muc"
+  },
+  {
+    "id": "C13",
+    "type": "negative",
+    "mode": "api_delete_anonymous",
+    "categoryId": 3,
+    "expect": { "outcome": "http", "status": 401 },
+    "assertion": "P5",
+    "spec_ref": "FR-12 + SEC-02 (yeu cau JWT)",
+    "hw02_ref": "FR-14 DT-06",
+    "description": "Khong co token thi khong duoc xoa danh muc"
+  },
+  {
+    "id": "C14",
+    "type": "negative",
+    "mode": "login_wrong_password",
+    "expect": { "outcome": "denied" },
+    "assertion": "P3",
+    "spec_ref": "FR-12 R3 (kiem soat truy cap)",
+    "hw02_ref": "FR-14 DT-07",
+    "description": "Dang nhap admin sai mat khau thi khong vao duoc trang quan tri"
+  }
+]
