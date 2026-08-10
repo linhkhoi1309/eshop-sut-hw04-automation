@@ -11,7 +11,8 @@
  *   node scripts/run-all.mjs --feature FR-09 # one feature on all 3 engines
  */
 import { execFileSync, execSync } from 'node:child_process';
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 
 const RUN_BY = process.env.RUN_BY ?? '23127396';
@@ -23,7 +24,16 @@ const argFeature = process.argv.includes('--feature')
   : null;
 const features = argFeature ? [argFeature] : FEATURES;
 
-const { collectSpecs } = await import('./summarize.mjs').catch(() => ({}));
+/**
+ * Run Playwright's CLI entry point with this same node binary.
+ *
+ * Not `npx`: since Node 18.20/20.12, execFile refuses to spawn a `.cmd` shim without
+ * `shell: true` (CVE-2024-27980), so `execFileSync('npx.cmd', …)` throws instantly on
+ * Windows — and because the runner deliberately swallows the non-zero exit of a test run,
+ * that failure was invisible until results.json turned up missing. Resolving the CLI module
+ * removes both the shell and the PATH from the equation.
+ */
+const PLAYWRIGHT_CLI = createRequire(import.meta.url).resolve('@playwright/test/cli');
 
 function countResults(reportDir) {
   const report = JSON.parse(readFileSync(path.join(reportDir, 'results.json'), 'utf8'));
@@ -70,12 +80,23 @@ for (const feature of features) {
     // which would silently discard the HTML report and results.json this run exists to produce.
     try {
       execFileSync(
-        process.platform === 'win32' ? 'npx.cmd' : 'npx',
-        ['playwright', 'test', '--project=' + browser, '--grep', '@' + feature],
+        process.execPath,
+        [PLAYWRIGHT_CLI, 'test', '--project=' + browser, '--grep', '@' + feature],
         { stdio: 'inherit', env: { ...process.env, HTML_OUT: out, FEATURE: feature, RUN_BY } },
       );
-    } catch {
+    } catch (err) {
       // A non-zero exit just means some tests failed — expected on a deliberately-buggy SUT.
+      // Anything else (the CLI never started) must not be mistaken for "tests failed".
+      if (typeof err.status !== 'number') {
+        console.error(`\nFATAL: could not run Playwright for ${feature}/${browser}:`, err.message);
+        process.exit(1);
+      }
+    }
+
+    // Distinguish "the suite ran and some tests failed" from "the suite never produced a report".
+    if (!existsSync(path.join(out, 'results.json'))) {
+      console.error(`\nFATAL: ${out}/results.json was not produced — the run did not complete.`);
+      process.exit(1);
     }
 
     const counts = countResults(out);
