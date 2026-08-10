@@ -35,6 +35,9 @@ const COPY = [
   ['docs/fr14', 'docs/fr14'],
 ];
 
+/** Scratch runs (reports/_dev*, reports/_smoke, reports/local) are development leftovers. */
+const isScratch = (p) => /[\\/]reports[\\/]_|[\\/]reports[\\/]local(\\|\/|$)/.test(p);
+
 for (const [from, to] of COPY) {
   const src = path.join(REPO, from);
   const dst = path.join(ROOT, to);
@@ -43,7 +46,7 @@ for (const [from, to] of COPY) {
     continue;
   }
   rmSync(dst, { recursive: true, force: true });
-  cpSync(src, dst, { recursive: true });
+  cpSync(src, dst, { recursive: true, filter: (s) => !isScratch(s) });
   console.log(`copied ${from} -> ${path.relative(ROOT, dst)}`);
 }
 
@@ -102,11 +105,18 @@ console.log(`${runs.length} stamped reports: ${runs.join(', ')}`);
 const zipPath = path.join(ROOT, '..', `${NAME}.zip`);
 rmSync(zipPath, { force: true });
 
+/**
+ * `hw04\reports\*` is excluded deliberately: the nine reports are already in the zip at the
+ * submission root, and each carries ~1.4 MB of trace-viewer bundle plus the failure videos, so
+ * shipping both copies doubled the archive to 86 MB for no extra information. The repo's own
+ * copy stays committed and is reachable through the public GitHub link.
+ */
 const EXCLUDE = [
   '*\\node_modules\\*',
   '*\\test-results\\*',
   '*\\.git\\*',
   '*\\Ref\\*',
+  '*\\hw04\\reports\\*',
   '*\\.md2pdf-*',
   '*.sqlite',
 ];
