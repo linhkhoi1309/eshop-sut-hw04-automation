@@ -1,7 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 import { CheckoutPage } from '../pages/checkout.page.js';
-import { loginViaToken, addToCartAndOpenCheckout } from '../fixtures/eshop.fixtures.js';
+import {
+  loginViaToken,
+  addToCartAndOpenCheckout,
+  seedCouponUsage,
+  couponIdByCode,
+} from '../fixtures/eshop.fixtures.js';
 import { RUN_BY } from '../playwright.config.js';
 
 /**
@@ -27,11 +32,70 @@ test.describe('@FR-09 Discount coupons', () => {
       testInfo.annotations.push({ type: 'HW02 case', description: row.hw02_ref });
       testInfo.annotations.push({ type: 'Assertion pattern', description: row.assertion });
 
-      if (row.loggedIn) await loginViaToken(page);
-      await addToCartAndOpenCheckout(page);
+      let token;
+      if (row.loggedIn) ({ token } = await loginViaToken(page));
+
+      // C5 needs prior state, seeded through the API so the case is repeatable from a fresh DB.
+      if (row.seedUsage) {
+        const couponId = await couponIdByCode(row.seedUsage.code);
+        await seedCouponUsage(token, couponId, row.seedUsage.times);
+      }
 
       const checkout = new CheckoutPage(page);
+
+      if (row.loggedIn) {
+        await addToCartAndOpenCheckout(page);
+      } else {
+        // A guest cannot reach checkout through the cart (it alerts and redirects to login),
+        // so C4 is exercised by opening the page directly. The cart is empty either way; the
+        // total is set explicitly below, which is what the coupon check consumes.
+        await checkout.open();
+      }
+
       await checkout.setTotal(row.total);
+
+      /** B11 — the observable fact is that NO request is made, so watch the network. */
+      if (row.mode === 'no_request') {
+        let requests = 0;
+        page.on('request', (r) => {
+          if (r.url().includes('/api/apply-coupon')) requests++;
+        });
+
+        await checkout.couponInput.fill(row.code);
+        await expect(
+          checkout.applyButton,
+          'FR-09: Apply must stay disabled while the coupon field is empty',
+        ).toBeDisabled();
+        expect(requests, 'no /api/apply-coupon request may be sent for an empty code').toBe(0);
+        return;
+      }
+
+      /** B15 — changing the total must not leave a stale discount on screen (FR-08). */
+      if (row.mode === 'clear_on_total_change') {
+        await checkout.applyCoupon(row.code);
+        await expect(checkout.successMessage).toBeVisible();
+
+        await checkout.setTotal(row.newTotal);
+        await expect(
+          checkout.successMessage,
+          'FR-08: a stale discount must not survive a change of the order total',
+        ).toBeHidden();
+        expect(await checkout.headlineValue()).toBe(row.newTotal);
+        return;
+      }
+
+      /** B16 — the page must render exactly what the API computed. */
+      if (row.mode === 'ui_matches_api') {
+        const apiResponse = await checkout.applyCoupon(row.code);
+        const body = await apiResponse.json();
+        await expect(checkout.successMessage).toBeVisible();
+        expect(
+          await checkout.finalValue(),
+          'the displayed total must equal the API final_amount',
+        ).toBe(body.final_amount);
+        expect(await checkout.headlineValue()).toBe(body.final_amount);
+        return;
+      }
 
       // P5 — network assertion: the API answer is captured alongside the UI result, so a
       // discrepancy between what the server computed and what the page shows is visible.
@@ -50,18 +114,25 @@ test.describe('@FR-09 Discount coupons', () => {
         ).toBeVisible();
 
         // P1 — the discount and final amounts must equal the spec formula's result.
-        expect(
-          await checkout.savedValue(),
-          `discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`,
-        ).toBe(row.expect.discount);
+        // Amounts are asserted only when the case states them: B12 exists to check that a
+        // lower-case code is accepted at all, and asserting the (separately broken) formula
+        // there would blur which defect the case is reporting.
+        if (row.expect.discount !== undefined) {
+          expect(
+            await checkout.savedValue(),
+            `discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`,
+          ).toBe(row.expect.discount);
+        }
 
-        expect(
-          await checkout.finalValue(),
-          `final amount for ${row.code} on ${row.total} (spec: ${row.expect.final})`,
-        ).toBe(row.expect.final);
+        if (row.expect.final !== undefined) {
+          expect(
+            await checkout.finalValue(),
+            `final amount for ${row.code} on ${row.total} (spec: ${row.expect.final})`,
+          ).toBe(row.expect.final);
 
-        // The headline the customer pays must agree with the panel.
-        expect(await checkout.headlineValue()).toBe(row.expect.final);
+          // The headline the customer pays must agree with the panel.
+          expect(await checkout.headlineValue()).toBe(row.expect.final);
+        }
       } else {
         // P3 + P1 — refusal must be visible and must say why.
         await expect(
