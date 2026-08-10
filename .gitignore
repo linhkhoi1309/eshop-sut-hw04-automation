@@ -9,6 +9,14 @@ blob-report/
 # SUT runtime state (reseeded by `node backend/database.js` before every run)
 backend/database.sqlite
 
+# Throw-away development runs. Only the 9 official reports (reports/FR-xx-<browser>/) and
+# reports/index.html are committed — they are graded artifacts; scratch runs are not.
+reports/_*/
+reports/local/
+
+# Intermediate HTML produced by scripts/md2pdf.mjs
+**/.md2pdf-*.html
+
 # OS / editor
 .DS_Store
 Thumbs.db

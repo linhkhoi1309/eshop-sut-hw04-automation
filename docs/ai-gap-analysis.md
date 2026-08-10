@@ -93,12 +93,36 @@ network assertion (pattern P5).
 **Cause: model limitation.** The AI pattern-matched "negative case → expect an error" instead of
 asking what is observable in that state.
 
+## G-08 · A test that PASSED while the defect it targets was happening — FR-14 C04/C05
+
+**Produced:** for "an empty category name must be refused", the natural assertion
+`await expect(categoryRows).toHaveCount(before)` — *the table must not grow*.
+**Wrong because:** Playwright's web-first assertions retry **until they match**, and this one
+matches on the very first poll, before the app has refreshed the list. It therefore cannot observe
+a row being added a moment later. Both cases went green — against a SUT that accepts `""` with
+HTTP 200 — and the run even left a category literally named `"   "` in the database, which is what
+gave the false pass away.
+**Correction:** the refused branch now awaits the POST, attaches the response, asserts the status
+is ≥ 400, and re-checks the category count **through the API** rather than the DOM. Re-run:
+`Expected: >= 400, Received: 200` and `Expected: 3, Received: 4` — the defect is now caught with
+evidence, and the rows the SUT wrongly creates are cleaned up.
+**Cause: model limitation**, and the most instructive entry in this file. Asserting *absence of
+change* against an auto-retrying assertion is a false-negative generator: the assertion is
+"correct" in isolation, reads well in review, and silently inverts the meaning of the test. Every
+"nothing should happen" case in this suite was re-checked for the same shape afterwards.
+
 ---
 
 ## Cross-cutting observation
 
-Four of the seven entries (G-01, G-03, G-04, G-07) share one shape: the AI produced something
-**structurally correct and plausible-looking** — a payload, a locator, a script, a negative case —
-whose defect only shows up when you ask *"if the feature were broken, would this test actually
-notice?"*. Reviewing AI output for **discriminating power**, not for plausibility, is the habit
-this assignment has forced.
+Five of the eight entries (G-01, G-03, G-04, G-07, G-08) share one shape: the AI produced something
+**structurally correct and plausible-looking** — a payload, a locator, a script, a negative case,
+an assertion — whose defect only shows up when you ask *"if the feature were broken, would this
+test actually notice?"*. Reviewing AI output for **discriminating power**, not for plausibility, is
+the habit this assignment has forced.
+
+G-03 and G-08 are the sharpest version of it: both were tests that would have reported **green
+while the very defect they were written to catch was occurring**. A suite full of such tests looks
+like evidence of quality and is in fact evidence of nothing. This is why every failing case in this
+project was verified against the API or the DOM before being written up, and why the passing ones
+were re-examined too.
