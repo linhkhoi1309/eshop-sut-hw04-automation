@@ -25,7 +25,11 @@ export class AdminPage {
     this.categoryRows = this.categoryTable.locator('tbody tr');
   }
 
-  async open(baseUrl = 'http://localhost:5174/') {
+  /**
+   * The admin SPA is on its own origin, so it cannot use the config's `baseURL`
+   * (which points at the storefront). ADMIN_URL keeps the port configurable in one place.
+   */
+  async open(baseUrl = process.env.ADMIN_URL ?? 'http://localhost:5174/') {
     await this.page.goto(baseUrl);
   }
 

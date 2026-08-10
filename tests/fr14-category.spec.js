@@ -9,7 +9,7 @@ import {
   listProducts,
   deleteCategoryByName,
 } from '../fixtures/eshop.fixtures.js';
-import { RUN_BY } from '../playwright.config.js';
+import { stampRunBy, annotateCase } from './_hooks.js';
 
 /**
  * FR-14 — Category management (CRUD) in the Web Admin.
@@ -36,21 +36,16 @@ function buildName(row) {
   return row.name + SUFFIX;
 }
 
-test.beforeEach(async ({}, testInfo) => {
-  testInfo.annotations.push({ type: 'Run by', description: RUN_BY });
-  testInfo.annotations.push({ type: 'Run at (ISO)', description: new Date().toISOString() });
-});
+stampRunBy();
 
 test.afterAll(async () => {
   for (const name of created) await deleteCategoryByName(name).catch(() => {});
 });
 
-test.describe('@FR-14 Category management (admin)', () => {
+test.describe('Category management (admin)', { tag: '@FR-14' }, () => {
   for (const row of cases) {
     test(`${row.id} [${row.type}] ${row.description} (${row.spec_ref})`, async ({ page, request }, testInfo) => {
-      testInfo.annotations.push({ type: 'Spec', description: row.spec_ref });
-      testInfo.annotations.push({ type: 'HW02 case', description: row.hw02_ref });
-      testInfo.annotations.push({ type: 'Assertion pattern', description: row.assertion });
+      annotateCase(testInfo, row);
 
       const admin = new AdminPage(page);
       const name = row.name !== undefined || row.nameRepeat ? buildName(row) : undefined;

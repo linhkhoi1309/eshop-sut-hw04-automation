@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/home.page.js';
 import { readCsv, splitList } from '../utils/csv.js';
-import { RUN_BY } from '../playwright.config.js';
+import { stampRunBy, annotateCase } from './_hooks.js';
 
 /**
  * FR-05 — Product listing & search (web storefront).
@@ -15,17 +15,12 @@ import { RUN_BY } from '../playwright.config.js';
  */
 const cases = readCsv('data/fr05-search.csv');
 
-test.beforeEach(async ({}, testInfo) => {
-  testInfo.annotations.push({ type: 'Run by', description: RUN_BY });
-  testInfo.annotations.push({ type: 'Run at (ISO)', description: new Date().toISOString() });
-});
+stampRunBy();
 
-test.describe('@FR-05 Product listing & search', () => {
+test.describe('Product listing & search', { tag: '@FR-05' }, () => {
   for (const row of cases) {
     test(`${row.id} [${row.type}] ${row.description} (${row.spec_ref})`, async ({ page }, testInfo) => {
-      testInfo.annotations.push({ type: 'Spec', description: row.spec_ref });
-      testInfo.annotations.push({ type: 'HW02 case', description: row.hw02_ref });
-      testInfo.annotations.push({ type: 'Assertion pattern', description: row.assertion });
+      annotateCase(testInfo, row);
 
       const home = new HomePage(page);
       await home.open();

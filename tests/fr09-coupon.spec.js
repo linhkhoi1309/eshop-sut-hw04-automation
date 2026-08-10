@@ -7,7 +7,7 @@ import {
   seedCouponUsage,
   couponIdByCode,
 } from '../fixtures/eshop.fixtures.js';
-import { RUN_BY } from '../playwright.config.js';
+import { stampRunBy, annotateCase } from './_hooks.js';
 
 /**
  * FR-09 — Discount coupons at checkout.
@@ -20,17 +20,12 @@ import { RUN_BY } from '../playwright.config.js';
  */
 const cases = JSON.parse(readFileSync('data/fr09-coupons.json', 'utf8'));
 
-test.beforeEach(async ({}, testInfo) => {
-  testInfo.annotations.push({ type: 'Run by', description: RUN_BY });
-  testInfo.annotations.push({ type: 'Run at (ISO)', description: new Date().toISOString() });
-});
+stampRunBy();
 
-test.describe('@FR-09 Discount coupons', () => {
+test.describe('Discount coupons', { tag: '@FR-09' }, () => {
   for (const row of cases) {
     test(`${row.id} [${row.type}] ${row.description} (${row.spec_ref})`, async ({ page }, testInfo) => {
-      testInfo.annotations.push({ type: 'Spec', description: row.spec_ref });
-      testInfo.annotations.push({ type: 'HW02 case', description: row.hw02_ref });
-      testInfo.annotations.push({ type: 'Assertion pattern', description: row.assertion });
+      annotateCase(testInfo, row);
 
       let token;
       if (row.loggedIn) ({ token } = await loginViaToken(page));
