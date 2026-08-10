@@ -1,0 +1,1497 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=webkit",
+      "--grep",
+      "@FR-14"
+    ],
+    "configFile": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\playwright.config.js",
+    "rootDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23127396",
+      "Student ID": "23127396",
+      "Student name": "Luong Linh Khoi",
+      "Feature": "FR-14",
+      "Run at (ISO)": "2026-08-10T23:49:28.533Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-14",
+          "Run at (ISO)": "2026-08-10T23:49:28.533Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-14",
+          "Run at (ISO)": "2026-08-10T23:49:28.533Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-14",
+          "Run at (ISO)": "2026-08-10T23:49:28.533Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR-14-webkit",
+          "open": "never",
+          "title": "Run by: 23127396 — FR-14 — 2026-08-10T23:49:28.533Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR-14-webkit/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr14-category.spec.js",
+      "file": "fr14-category.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Category management (admin)",
+          "file": "fr14-category.spec.js",
+          "line": 45,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C01 [positive] Tab Danh muc liet ke day du 3 danh muc goc (FR-14 R1 (Xem danh muc))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:29.566Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R1 (Xem danh muc)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1661,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:29.531Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:29.566Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R1 (Xem danh muc)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-cbb696c959acc89a0a57",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C02 [positive] Them danh muc hop le thi xuat hien trong bang (FR-14 R1 (Them danh muc))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:31.402Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R1 (Them danh muc)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1750,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:31.393Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:31.402Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R1 (Them danh muc)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-e4edab33d5519821342c",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C03 [positive] Ten dai 255 ky tu tieng Viet phai duoc chap nhan va hien thi nguyen ven (FR-14 R1 (ten dai, tieng Viet))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:33.163Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R1 (ten dai, tieng Viet)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 BVA-05"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1920,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:33.159Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:33.163Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R1 (ten dai, tieng Viet)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 BVA-05"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-ce6f36161a02de12967a",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C04 [negative] Ten rong phai bi tu choi, khong tao them dong nao (FR-14 R2 (ten bat buoc))",
+              "ok": false,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:35.094Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R2 (ten bat buoc)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-04"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1992,
+                      "error": {
+                        "message": "Error: FR-14 R2: the API must reject a blank name (sent \"\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m",
+                        "stack": "Error: FR-14 R2: the API must reject a blank name (sent \"\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:97:18",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                          "column": 18,
+                          "line": 97
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  95 |\u001b[39m                   \u001b[32m`FR-14 R2: the API must reject a blank name (sent ${JSON.stringify(name)})`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m  96 |\u001b[39m                 )\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m                 \u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m               \u001b[36mif\u001b[39m (post\u001b[33m.\u001b[39mok()) created\u001b[33m.\u001b[39madd(name)\u001b[33m;\u001b[39m \u001b[90m// clean up what the SUT wrongly created\u001b[39m\n \u001b[90m  99 |\u001b[39m             }\n \u001b[90m 100 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 18,
+                            "line": 97
+                          },
+                          "message": "Error: FR-14 R2: the API must reject a blank name (sent \"\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n\n   95 |                   `FR-14 R2: the API must reject a blank name (sent ${JSON.stringify(name)})`,\n   96 |                 )\n>  97 |                 .toBeGreaterThanOrEqual(400);\n      |                  ^\n   98 |               if (post.ok()) created.add(name); // clean up what the SUT wrongly created\n   99 |             }\n  100 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:97:18"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 15,
+                            "line": 105
+                          },
+                          "message": "Error: FR-14 R2: a refused create must not add a category (name=\"\")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m5\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n\n  103 |               countAfter,\n  104 |               `FR-14 R2: a refused create must not add a category (name=${JSON.stringify(name)})`,\n> 105 |             ).toBe(countBefore);\n      |               ^\n  106 |           }\n  107 |           break;\n  108 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:105:15"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:35.089Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:35.094Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R2 (ten bat buoc)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-04"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C04-response.txt",
+                          "contentType": "text/plain",
+                          "body": "SFRUUCAyMDAKeyJtZXNzYWdlIjoiQ2F0ZWdvcnkgY3JlYXRlZCIsImlkIjo2fQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-bbab3--nao-FR-14-R2-ten-bat-buoc--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-bbab3--nao-FR-14-R2-ten-bat-buoc--webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-bbab3--nao-FR-14-R2-ten-bat-buoc--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-bbab3--nao-FR-14-R2-ten-bat-buoc--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-bbab3--nao-FR-14-R2-ten-bat-buoc--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                        "column": 18,
+                        "line": 97
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-f4f5a96a59f13d743cc3",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C05 [negative] Ten chi gom khoang trang cung phai bi tu choi (FR-14 R2 (ten chi co khoang trang))",
+              "ok": false,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:38.535Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R2 (ten chi co khoang trang)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 BVA-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2052,
+                      "error": {
+                        "message": "Error: FR-14 R2: the API must reject a blank name (sent \"   \")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m",
+                        "stack": "Error: FR-14 R2: the API must reject a blank name (sent \"   \")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:97:18",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                          "column": 18,
+                          "line": 97
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  95 |\u001b[39m                   \u001b[32m`FR-14 R2: the API must reject a blank name (sent ${JSON.stringify(name)})`\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m  96 |\u001b[39m                 )\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m                 \u001b[33m.\u001b[39mtoBeGreaterThanOrEqual(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m               \u001b[36mif\u001b[39m (post\u001b[33m.\u001b[39mok()) created\u001b[33m.\u001b[39madd(name)\u001b[33m;\u001b[39m \u001b[90m// clean up what the SUT wrongly created\u001b[39m\n \u001b[90m  99 |\u001b[39m             }\n \u001b[90m 100 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 18,
+                            "line": 97
+                          },
+                          "message": "Error: FR-14 R2: the API must reject a blank name (sent \"   \")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m400\u001b[39m\nReceived:    \u001b[31m200\u001b[39m\n\n   95 |                   `FR-14 R2: the API must reject a blank name (sent ${JSON.stringify(name)})`,\n   96 |                 )\n>  97 |                 .toBeGreaterThanOrEqual(400);\n      |                  ^\n   98 |               if (post.ok()) created.add(name); // clean up what the SUT wrongly created\n   99 |             }\n  100 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:97:18"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 15,
+                            "line": 105
+                          },
+                          "message": "Error: FR-14 R2: a refused create must not add a category (name=\"   \")\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m4\u001b[39m\n\n  103 |               countAfter,\n  104 |               `FR-14 R2: a refused create must not add a category (name=${JSON.stringify(name)})`,\n> 105 |             ).toBe(countBefore);\n      |               ^\n  106 |           }\n  107 |           break;\n  108 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:105:15"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:38.498Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:38.535Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R2 (ten chi co khoang trang)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 BVA-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C05-response.txt",
+                          "contentType": "text/plain",
+                          "body": "SFRUUCAyMDAKeyJtZXNzYWdlIjoiQ2F0ZWdvcnkgY3JlYXRlZCIsImlkIjo3fQ=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-5b7ff-R2-ten-chi-co-khoang-trang--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-5b7ff-R2-ten-chi-co-khoang-trang--webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-5b7ff-R2-ten-chi-co-khoang-trang--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-5b7ff-R2-ten-chi-co-khoang-trang--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-5b7ff-R2-ten-chi-co-khoang-trang--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                        "column": 18,
+                        "line": 97
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-987408a54c39944ba2ae",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C06 [probe] Trung ten danh muc: dac ta khong quy dinh, chi ghi nhan ket qua (FR-14 (khong quy dinh tinh duy nhat))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:41.934Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 (khong quy dinh tinh duy nhat)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-08"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "record-only"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1924,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:41.900Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:41.934Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 (khong quy dinh tinh duy nhat)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-08"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "record-only"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C06-duplicate-probe.txt",
+                          "contentType": "text/plain",
+                          "body": "RlItMTQgc2F5cyBub3RoaW5nIGFib3V0IG5hbWUgdW5pcXVlbmVzcywgc28gbm8gdmVyZGljdCBpcyBhc3NlcnRlZC4KYmVmb3JlOiAzIHJvd3MsIGFmdGVyOiA0IHJvd3MsIHJvd3MgbmFtZWQgIkxhcHRvcCI6IDIKT2JzZXJ2ZWQ6IHRoZSBkdXBsaWNhdGUgd2FzIEFDQ0VQVEVELg=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-939c7c1521d195303dd7",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C07 [negative] Ten chua the HTML phai hien thi nhu van ban thuan (SEC-04 (escape du lieu nguoi dung))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:44.036Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "SEC-04 (escape du lieu nguoi dung)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-09"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1898,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:44.027Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:44.036Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "SEC-04 (escape du lieu nguoi dung)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-09"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-6bb0a2a2d2f42dcb869b",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C08 [positive] Xoa danh muc vua tao thi dong bien mat khoi bang (FR-14 R1 (Xoa danh muc))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:45.949Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R1 (Xoa danh muc)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-03"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2057,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:45.943Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:45.949Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R1 (Xoa danh muc)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-03"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-7359f555284189c1636f",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C09 [edge] Xoa danh muc dang co san pham khong duoc de lai san pham mo coi (FR-15 (san pham thuoc danh muc co san))",
+              "ok": false,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:48.020Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-15 (san pham thuoc danh muc co san)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 INTEG-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1816,
+                      "error": {
+                        "message": "Error: FR-15: 2 product(s) now reference the deleted category 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[{\"category_id\": 1, \"description\": \"Điện thoại cao cấp của Apple\", \"id\": 1, \"imageUrl\": \"https://placehold.co/300x300/png?text=iPhone+15\", \"name\": \"iPhone 15 Pro Max\", \"price\": 30000000}, {\"category_id\": 1, \"description\": \"Màn hình hiển thị xuất sắc, camera siêu zoom\", \"id\": 2, \"imageUrl\": \"https://placehold.co/300x300/png?text=Samsung+S24\", \"name\": \"Samsung Galaxy S24 Ultra\", \"price\": 28000000}]\u001b[39m",
+                        "stack": "Error: FR-15: 2 product(s) now reference the deleted category 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[{\"category_id\": 1, \"description\": \"Điện thoại cao cấp của Apple\", \"id\": 1, \"imageUrl\": \"https://placehold.co/300x300/png?text=iPhone+15\", \"name\": \"iPhone 15 Pro Max\", \"price\": 30000000}, {\"category_id\": 1, \"description\": \"Màn hình hiển thị xuất sắc, camera siêu zoom\", \"id\": 2, \"imageUrl\": \"https://placehold.co/300x300/png?text=Samsung+S24\", \"name\": \"Samsung Galaxy S24 Ultra\", \"price\": 28000000}]\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:200:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                          "column": 13,
+                          "line": 200
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 198 |\u001b[39m             orphans\u001b[33m,\u001b[39m\n \u001b[90m 199 |\u001b[39m             \u001b[32m`FR-15: ${orphans.length} product(s) now reference the deleted category ${victim?.id}`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 200 |\u001b[39m           )\u001b[33m.\u001b[39mtoHaveLength(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 201 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 202 |\u001b[39m         }\n \u001b[90m 203 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 13,
+                            "line": 200
+                          },
+                          "message": "Error: FR-15: 2 product(s) now reference the deleted category 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m0\u001b[39m\nReceived length: \u001b[31m2\u001b[39m\nReceived array:  \u001b[31m[{\"category_id\": 1, \"description\": \"Điện thoại cao cấp của Apple\", \"id\": 1, \"imageUrl\": \"https://placehold.co/300x300/png?text=iPhone+15\", \"name\": \"iPhone 15 Pro Max\", \"price\": 30000000}, {\"category_id\": 1, \"description\": \"Màn hình hiển thị xuất sắc, camera siêu zoom\", \"id\": 2, \"imageUrl\": \"https://placehold.co/300x300/png?text=Samsung+S24\", \"name\": \"Samsung Galaxy S24 Ultra\", \"price\": 28000000}]\u001b[39m\n\n  198 |             orphans,\n  199 |             `FR-15: ${orphans.length} product(s) now reference the deleted category ${victim?.id}`,\n> 200 |           ).toHaveLength(0);\n      |             ^\n  201 |           break;\n  202 |         }\n  203 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:200:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:48.014Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:48.020Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-15 (san pham thuoc danh muc co san)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 INTEG-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C09-orphans.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJkZWxldGVkIjogewogICAgImlkIjogMSwKICAgICJuYW1lIjogIsSQaeG7h24gdGhv4bqhaSIKICB9LAogICJvcnBoYW5Db3VudCI6IDIsCiAgIm9ycGhhbnMiOiBbCiAgICB7CiAgICAgICJpZCI6IDEsCiAgICAgICJuYW1lIjogImlQaG9uZSAxNSBQcm8gTWF4IiwKICAgICAgInByaWNlIjogMzAwMDAwMDAsCiAgICAgICJkZXNjcmlwdGlvbiI6ICLEkGnhu4duIHRob+G6oWkgY2FvIGPhuqVwIGPhu6dhIEFwcGxlIiwKICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9aVBob25lKzE1IiwKICAgICAgImNhdGVnb3J5X2lkIjogMQogICAgfSwKICAgIHsKICAgICAgImlkIjogMiwKICAgICAgIm5hbWUiOiAiU2Ftc3VuZyBHYWxheHkgUzI0IFVsdHJhIiwKICAgICAgInByaWNlIjogMjgwMDAwMDAsCiAgICAgICJkZXNjcmlwdGlvbiI6ICJNw6BuIGjDrG5oIGhp4buDbiB0aOG7iyB4deG6pXQgc+G6r2MsIGNhbWVyYSBzacOqdSB6b29tIiwKICAgICAgImltYWdlVXJsIjogImh0dHBzOi8vcGxhY2Vob2xkLmNvLzMwMHgzMDAvcG5nP3RleHQ9U2Ftc3VuZytTMjQiLAogICAgICAiY2F0ZWdvcnlfaWQiOiAxCiAgICB9CiAgXQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-ce338-pham-thuoc-danh-muc-co-san--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-ce338-pham-thuoc-danh-muc-co-san--webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-ce338-pham-thuoc-danh-muc-co-san--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-ce338-pham-thuoc-danh-muc-co-san--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-ce338-pham-thuoc-danh-muc-co-san--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                        "column": 13,
+                        "line": 200
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-114192d4259fe1f42dcc",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C10 [positive] Danh muc moi tao van con sau khi tai lai trang (FR-14 R1 (luu phia server))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:51.081Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-14 R1 (luu phia server)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-10"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2227,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:51.051Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:51.081Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-14 R1 (luu phia server)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-10"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-080496d585e3702a2ac3",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C11 [positive] Danh muc moi phai chon duoc trong form san pham (FR-15 (chon danh muc tu danh sach))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:53.495Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-15 (chon danh muc tu danh sach)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 INTEG-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2132,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:53.478Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:53.495Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-15 (chon danh muc tu danh sach)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 INTEG-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-77d9443669a5d0dc663f",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C12 [negative] Token nguoi dung thuong khong duoc phep tao danh muc (FR-12 + SEC-03 (yeu cau role admin))",
+              "ok": false,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:55.642Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-12 + SEC-03 (yeu cau role admin)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-05"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 688,
+                      "error": {
+                        "message": "Error: FR-12 / SEC-03: a user token must not be allowed to create a category\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
+                        "stack": "Error: FR-12 / SEC-03: a user token must not be allowed to create a category\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:255:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                          "column": 13,
+                          "line": 255
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 253 |\u001b[39m             res\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m\n \u001b[90m 254 |\u001b[39m             \u001b[32m'FR-12 / SEC-03: a user token must not be allowed to create a category'\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 255 |\u001b[39m           )\u001b[33m.\u001b[39mtoBe(row\u001b[33m.\u001b[39mexpect\u001b[33m.\u001b[39mstatus)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 256 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 257 |\u001b[39m         }\n \u001b[90m 258 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                            "column": 13,
+                            "line": 255
+                          },
+                          "message": "Error: FR-12 / SEC-03: a user token must not be allowed to create a category\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m403\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n  253 |             res.status(),\n  254 |             'FR-12 / SEC-03: a user token must not be allowed to create a category',\n> 255 |           ).toBe(row.expect.status);\n      |             ^\n  256 |           break;\n  257 |         }\n  258 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js:255:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:55.635Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:55.642Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-12 + SEC-03 (yeu cau role admin)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-05"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C12-response.txt",
+                          "contentType": "text/plain",
+                          "body": "SFRUUCAyMDAKeyJtZXNzYWdlIjoiQ2F0ZWdvcnkgY3JlYXRlZCIsImlkIjoxM30="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-b9339--SEC-03-yeu-cau-role-admin--webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-b9339--SEC-03-yeu-cau-role-admin--webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-b9339--SEC-03-yeu-cau-role-admin--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-b9339--SEC-03-yeu-cau-role-admin--webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr14-category-Category-man-b9339--SEC-03-yeu-cau-role-admin--webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr14-category.spec.js",
+                        "column": 13,
+                        "line": 255
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-f331b8dbac0147b01e7c",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C13 [negative] Khong co token thi khong duoc xoa danh muc (FR-12 + SEC-02 (yeu cau JWT))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:57.626Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-12 + SEC-02 (yeu cau JWT)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-06"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 682,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:57.584Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:57.626Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-12 + SEC-02 (yeu cau JWT)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-06"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "C13-response.txt",
+                          "contentType": "text/plain",
+                          "body": "SFRUUCA0MDEKeyJlcnJvciI6IlVuYXV0aG9yaXplZCJ9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-ea0ce4254c21b5da80c5",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            },
+            {
+              "title": "C14 [negative] Dang nhap admin sai mat khau thi khong vao duoc trang quan tri (FR-12 R3 (kiem soat truy cap))",
+              "ok": true,
+              "tags": [
+                "FR-14"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:49:58.480Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-12 R3 (kiem soat truy cap)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-14 DT-07"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1227,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:49:58.472Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:49:58.480Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-12 R3 (kiem soat truy cap)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-14 DT-07"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5536b5a74a27a9a5813c-611e51df257fbc5ff8e2",
+              "file": "fr14-category.spec.js",
+              "line": 47,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-10T23:49:28.538Z",
+    "duration": 31315.465,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

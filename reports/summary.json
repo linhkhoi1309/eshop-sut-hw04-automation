@@ -1,0 +1,187 @@
+{
+  "runBy": "23127396",
+  "generatedAt": "2026-08-10T23:38:54.277Z",
+  "runs": [
+    {
+      "feature": "FR-05",
+      "browser": "chromium",
+      "startedAt": "2026-08-10T23:38:54.278Z",
+      "report": "reports/FR-05-chromium/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 6,
+      "failed": 10,
+      "skipped": 0,
+      "failedIds": [
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16"
+      ]
+    },
+    {
+      "feature": "FR-05",
+      "browser": "firefox",
+      "startedAt": "2026-08-10T23:40:19.961Z",
+      "report": "reports/FR-05-firefox/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 6,
+      "failed": 10,
+      "skipped": 0,
+      "failedIds": [
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16"
+      ]
+    },
+    {
+      "feature": "FR-05",
+      "browser": "webkit",
+      "startedAt": "2026-08-10T23:42:42.537Z",
+      "report": "reports/FR-05-webkit/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 6,
+      "failed": 10,
+      "skipped": 0,
+      "failedIds": [
+        "A07",
+        "A08",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15",
+        "A16"
+      ]
+    },
+    {
+      "feature": "FR-09",
+      "browser": "chromium",
+      "startedAt": "2026-08-10T23:44:09.474Z",
+      "report": "reports/FR-09-chromium/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 11,
+      "failed": 5,
+      "skipped": 0,
+      "failedIds": [
+        "B01",
+        "B02",
+        "B04",
+        "B05",
+        "B14"
+      ]
+    },
+    {
+      "feature": "FR-09",
+      "browser": "firefox",
+      "startedAt": "2026-08-10T23:45:01.825Z",
+      "report": "reports/FR-09-firefox/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 11,
+      "failed": 5,
+      "skipped": 0,
+      "failedIds": [
+        "B01",
+        "B02",
+        "B04",
+        "B05",
+        "B14"
+      ]
+    },
+    {
+      "feature": "FR-09",
+      "browser": "webkit",
+      "startedAt": "2026-08-10T23:46:41.190Z",
+      "report": "reports/FR-09-webkit/index.html",
+      "stamped": true,
+      "total": 16,
+      "passed": 11,
+      "failed": 5,
+      "skipped": 0,
+      "failedIds": [
+        "B01",
+        "B02",
+        "B04",
+        "B05",
+        "B14"
+      ]
+    },
+    {
+      "feature": "FR-14",
+      "browser": "chromium",
+      "startedAt": "2026-08-10T23:47:47.987Z",
+      "report": "reports/FR-14-chromium/index.html",
+      "stamped": true,
+      "total": 14,
+      "passed": 10,
+      "failed": 4,
+      "skipped": 0,
+      "failedIds": [
+        "C04",
+        "C05",
+        "C09",
+        "C12"
+      ]
+    },
+    {
+      "feature": "FR-14",
+      "browser": "firefox",
+      "startedAt": "2026-08-10T23:48:11.005Z",
+      "report": "reports/FR-14-firefox/index.html",
+      "stamped": true,
+      "total": 14,
+      "passed": 10,
+      "failed": 4,
+      "skipped": 0,
+      "failedIds": [
+        "C04",
+        "C05",
+        "C09",
+        "C12"
+      ]
+    },
+    {
+      "feature": "FR-14",
+      "browser": "webkit",
+      "startedAt": "2026-08-10T23:49:27.430Z",
+      "report": "reports/FR-14-webkit/index.html",
+      "stamped": true,
+      "total": 14,
+      "passed": 10,
+      "failed": 4,
+      "skipped": 0,
+      "failedIds": [
+        "C04",
+        "C05",
+        "C09",
+        "C12"
+      ]
+    }
+  ],
+  "totals": {
+    "executions": 138,
+    "passed": 81,
+    "failed": 57,
+    "skipped": 0,
+    "browserRuns": 9
+  }
+}

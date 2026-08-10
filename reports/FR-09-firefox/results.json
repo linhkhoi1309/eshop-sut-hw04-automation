@@ -1,0 +1,1703 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=firefox",
+      "--grep",
+      "@FR-09"
+    ],
+    "configFile": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\playwright.config.js",
+    "rootDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23127396",
+      "Student ID": "23127396",
+      "Student name": "Luong Linh Khoi",
+      "Feature": "FR-09",
+      "Run at (ISO)": "2026-08-10T23:45:03.036Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-09",
+          "Run at (ISO)": "2026-08-10T23:45:03.036Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-09",
+          "Run at (ISO)": "2026-08-10T23:45:03.036Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-09",
+          "Run at (ISO)": "2026-08-10T23:45:03.036Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR-09-firefox",
+          "open": "never",
+          "title": "Run by: 23127396 — FR-09 — 2026-08-10T23:45:03.036Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR-09-firefox/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr09-coupon.spec.js",
+      "file": "fr09-coupon.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Discount coupons",
+          "file": "fr09-coupon.spec.js",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "B01 [positive] SAVE10 giam 10% cua 500.000 phai la 50.000 (FR-09 percent formula)",
+              "ok": false,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:04.048Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 percent formula"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4585,
+                      "error": {
+                        "message": "Error: discount for SAVE10 on 500000 (spec: 50000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m-4500000\u001b[39m",
+                        "stack": "Error: discount for SAVE10 on 500000 (spec: 50000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m-4500000\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:119:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                          "column": 13,
+                          "line": 119
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m             \u001b[36mawait\u001b[39m checkout\u001b[33m.\u001b[39msavedValue()\u001b[33m,\u001b[39m\n \u001b[90m 118 |\u001b[39m             \u001b[32m`discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m           )\u001b[33m.\u001b[39mtoBe(row\u001b[33m.\u001b[39mexpect\u001b[33m.\u001b[39mdiscount)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m         }\n \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m         \u001b[36mif\u001b[39m (row\u001b[33m.\u001b[39mexpect\u001b[33m.\u001b[39mfinal \u001b[33m!==\u001b[39m undefined) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                            "column": 13,
+                            "line": 119
+                          },
+                          "message": "Error: discount for SAVE10 on 500000 (spec: 50000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50000\u001b[39m\nReceived: \u001b[31m-4500000\u001b[39m\n\n  117 |             await checkout.savedValue(),\n  118 |             `discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`,\n> 119 |           ).toBe(row.expect.discount);\n      |             ^\n  120 |         }\n  121 |\n  122 |         if (row.expect.final !== undefined) {\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:119:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:04.014Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:04.048Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 percent formula"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B01-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMSwKICAgICJkaXNjb3VudF9hbW91bnQiOiAtNDUwMDAwMCwKICAgICJmaW5hbF9hbW91bnQiOiA1MDAwMDAwLAogICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSAxMCUiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-0c9e3--000-FR-09-percent-formula--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-0c9e3--000-FR-09-percent-formula--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-0c9e3--000-FR-09-percent-formula--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-0c9e3--000-FR-09-percent-formula--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                        "column": 13,
+                        "line": 119
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-675eeff4858666d67f03",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B02 [edge] Tong bang dung nguong toi thieu 300.000 thi van duoc ap dung (FR-09 C3 (bien duoi, >=))",
+              "ok": false,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:12.677Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C3 (bien duoi, >=)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11315,
+                      "error": {
+                        "message": "Error: FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n",
+                        "stack": "Error: FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:109:11",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                          "column": 11,
+                          "line": 109
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 107 |\u001b[39m           checkout\u001b[33m.\u001b[39msuccessMessage\u001b[33m,\u001b[39m\n \u001b[90m 108 |\u001b[39m           \u001b[32m`FR-09: ${row.code} at total ${row.total} must be accepted (${row.spec_ref})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m         )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m\n \u001b[90m 111 |\u001b[39m         \u001b[90m// P1 — the discount and final amounts must equal the spec formula's result.\u001b[39m\n \u001b[90m 112 |\u001b[39m         \u001b[90m// Amounts are asserted only when the case states them: B12 exists to check that a\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                            "column": 11,
+                            "line": 109
+                          },
+                          "message": "Error: FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: SAVE10 at total 300000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\n\n  107 |           checkout.successMessage,\n  108 |           `FR-09: ${row.code} at total ${row.total} must be accepted (${row.spec_ref})`,\n> 109 |         ).toBeVisible();\n      |           ^\n  110 |\n  111 |         // P1 — the discount and final amounts must equal the spec formula's result.\n  112 |         // Amounts are asserted only when the case states them: B12 exists to check that a\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:109:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:12.643Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:12.677Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C3 (bien duoi, >=)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B02-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDMwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-d18dc-ap-dung-FR-09-C3-bien-duoi--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-d18dc-ap-dung-FR-09-C3-bien-duoi--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-d18dc-ap-dung-FR-09-C3-bien-duoi--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-d18dc-ap-dung-FR-09-C3-bien-duoi--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                        "column": 11,
+                        "line": 109
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-d83d975300eacc25299e",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B03 [negative] Tong duoi nguong 1 dong phai bi tu choi (FR-09 C3 (min-1))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:26.428Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C3 (min-1)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4005,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:26.393Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:26.428Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C3 (min-1)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B03-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDMwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-537a43734236387f2ecd",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B04 [edge] Tren nguong 1 dong phai ap dung, giam lam tron xuong 30.000 (FR-09 C3 (min+1))",
+              "ok": false,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:31.205Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C3 (min+1)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-03"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3527,
+                      "error": {
+                        "message": "Error: discount for SAVE10 on 300001 (spec: 30000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30000\u001b[39m\nReceived: \u001b[31m-2700009\u001b[39m",
+                        "stack": "Error: discount for SAVE10 on 300001 (spec: 30000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30000\u001b[39m\nReceived: \u001b[31m-2700009\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:119:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                          "column": 13,
+                          "line": 119
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m             \u001b[36mawait\u001b[39m checkout\u001b[33m.\u001b[39msavedValue()\u001b[33m,\u001b[39m\n \u001b[90m 118 |\u001b[39m             \u001b[32m`discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m           )\u001b[33m.\u001b[39mtoBe(row\u001b[33m.\u001b[39mexpect\u001b[33m.\u001b[39mdiscount)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m         }\n \u001b[90m 121 |\u001b[39m\n \u001b[90m 122 |\u001b[39m         \u001b[36mif\u001b[39m (row\u001b[33m.\u001b[39mexpect\u001b[33m.\u001b[39mfinal \u001b[33m!==\u001b[39m undefined) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                            "column": 13,
+                            "line": 119
+                          },
+                          "message": "Error: discount for SAVE10 on 300001 (spec: 30000)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m30000\u001b[39m\nReceived: \u001b[31m-2700009\u001b[39m\n\n  117 |             await checkout.savedValue(),\n  118 |             `discount for ${row.code} on ${row.total} (spec: ${row.expect.discount})`,\n> 119 |           ).toBe(row.expect.discount);\n      |             ^\n  120 |         }\n  121 |\n  122 |         if (row.expect.final !== undefined) {\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:119:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:31.198Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:31.205Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C3 (min+1)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-03"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B04-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMSwKICAgICJkaXNjb3VudF9hbW91bnQiOiAtMjcwMDAwOSwKICAgICJmaW5hbF9hbW91bnQiOiAzMDAwMDEwLAogICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSAxMCUiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-09ac1-uong-30-000-FR-09-C3-min-1--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-09ac1-uong-30-000-FR-09-C3-min-1--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-09ac1-uong-30-000-FR-09-C3-min-1--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-09ac1-uong-30-000-FR-09-C3-min-1--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                        "column": 13,
+                        "line": 119
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-523e3bf9bb9a6287b5df",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B05 [edge] BIGBUY tai dung nguong 500.000 phai duoc ap dung (FR-09 C3 (bien duoi, >=))",
+              "ok": false,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:36.336Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C3 (bien duoi, >=)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-05"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11472,
+                      "error": {
+                        "message": "Error: FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n",
+                        "stack": "Error: FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:109:11",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                          "column": 11,
+                          "line": 109
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 107 |\u001b[39m           checkout\u001b[33m.\u001b[39msuccessMessage\u001b[33m,\u001b[39m\n \u001b[90m 108 |\u001b[39m           \u001b[32m`FR-09: ${row.code} at total ${row.total} must be accepted (${row.spec_ref})`\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 109 |\u001b[39m         )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 110 |\u001b[39m\n \u001b[90m 111 |\u001b[39m         \u001b[90m// P1 — the discount and final amounts must equal the spec formula's result.\u001b[39m\n \u001b[90m 112 |\u001b[39m         \u001b[90m// Amounts are asserted only when the case states them: B12 exists to check that a\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                            "column": 11,
+                            "line": 109
+                          },
+                          "message": "Error: FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=))\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('✅')\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-09: BIGBUY at total 500000 must be accepted (FR-09 C3 (bien duoi, >=)) with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\n\n  107 |           checkout.successMessage,\n  108 |           `FR-09: ${row.code} at total ${row.total} must be accepted (${row.spec_ref})`,\n> 109 |         ).toBeVisible();\n      |           ^\n  110 |\n  111 |         // P1 — the discount and final amounts must equal the spec formula's result.\n  112 |         // Amounts are asserted only when the case states them: B12 exists to check that a\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:109:11"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:36.292Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:36.336Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C3 (bien duoi, >=)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-05"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B05-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDUwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-abca4-ap-dung-FR-09-C3-bien-duoi--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-abca4-ap-dung-FR-09-C3-bien-duoi--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-abca4-ap-dung-FR-09-C3-bien-duoi--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-abca4-ap-dung-FR-09-C3-bien-duoi--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                        "column": 11,
+                        "line": 109
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-51d581efb263a0af4544",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B06 [negative] BIGBUY duoi nguong 1 dong phai bi tu choi (FR-09 C3 (min-1))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:50.839Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C3 (min-1)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-04"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4392,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:50.791Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:50.839Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C3 (min-1)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-04"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B06-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDUwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-50d4f725de0ecd5b396f",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B07 [positive] BIGBUY tren nguong: giam co dinh 50.000 (FR-09 fixed formula)",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:56.250Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 fixed formula"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-06"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3385,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:56.244Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:56.250Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 fixed formula"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-06"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B07-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMiwKICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-6ad1e36118cf178c3cfd",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B08 [positive] VIP100 giam co dinh 100.000 khi tren nguong 300.000 (FR-09 fixed formula)",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:45:59.649Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 fixed formula"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-03"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3225,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:45:59.643Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:45:59.649Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 fixed formula"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-03"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B08-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMywKICAgICJkaXNjb3VudF9hbW91bnQiOiAxMDAwMDAsCiAgICAiZmluYWxfYW1vdW50IjogMzAwMDAwLAogICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSAxMDAsMDAwIOKCqyIKICB9Cn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-34b6942ad683ab8bfdcd",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B09 [negative] Ma da het han (2020-01-01) phai bi tu choi vi ly do het han (FR-09 C2 (con han su dung))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:02.886Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C2 (con han su dung)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-04"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:02.882Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:02.886Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C2 (con han su dung)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-04"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B09-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIMSRw6MgaOG6v3QgaOG6oW4iCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-6621794f5cca27b213bd",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B10 [negative] Ma khong ton tai phai bi tu choi (FR-09 C1 (ma ton tai))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:06.051Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C1 (ma ton tai)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-06"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3145,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:06.043Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:06.051Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C1 (ma ton tai)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-06"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B10-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDQsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIGtow7RuZyB04buTbiB04bqhaSBob+G6t2MgxJHDoyBi4buLIHbDtCBoaeG7h3UgaMOzYSIKICB9Cn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-aa4fa1fb92b61b460d38",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B11 [negative] Ma rong: nut Ap dung bi vo hieu va khong goi API (FR-09 C1 (ma rong))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:09.208Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C1 (ma rong)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-07"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:09.202Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:09.208Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C1 (ma rong)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-07"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P5"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-c0960209d9e884c1f716",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B12 [edge] Ma nhap chu thuong van duoc chap nhan (UI tu chuyen hoa) (FR-09 C1 (chuan hoa chu hoa))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:12.330Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C1 (chuan hoa chu hoa)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-14"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3139,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:12.324Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:12.330Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C1 (chuan hoa chu hoa)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-14"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B12-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMSwKICAgICJkaXNjb3VudF9hbW91bnQiOiAtMzYwMDAwMCwKICAgICJmaW5hbF9hbW91bnQiOiA0MDAwMDAwLAogICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSAxMCUiCiAgfQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-7d6059625b0aa3258c7a",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B13 [edge] Dung het 2 luot VIP100 thi lan thu 3 phai bi tu choi (FR-09 C5 (so lan tren nguoi dung))",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:15.481Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C5 (so lan tren nguoi dung)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 BVA-15"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3332,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:15.476Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:15.481Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C5 (so lan tren nguoi dung)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 BVA-15"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B13-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiA0MDAsCiAgImJvZHkiOiB7CiAgICAiZXJyb3IiOiAiQuG6oW4gxJHDoyBz4butIGThu6VuZyBtw6MgbsOgeSAyIGzhuqduICjEkcOjIMSR4bqhdCBnaeG7m2kgaOG6oW4pIgogIH0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-57ad7271bcbeaf93cc3b",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B14 [negative] Chua dang nhap thi khong duoc ap dung ma giam gia (FR-09 C4 (yeu cau JWT hop le))",
+              "ok": false,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:18.839Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 C4 (yeu cau JWT hop le)"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-09"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10102,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText('✅')\nExpected: hidden\nReceived: visible\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeHidden\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\u001b[2m    17 × locator resolved to <p>✅ Áp dụng thành công! Giảm 10%</p>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText('✅')\nExpected: hidden\nReceived: visible\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeHidden\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\u001b[2m    17 × locator resolved to <p>✅ Áp dụng thành công! Giảm 10%</p>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:143:47",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                          "column": 47,
+                          "line": 143
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 141 |\u001b[39m\n \u001b[90m 142 |\u001b[39m         \u001b[90m// ...and no discount may be displayed.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 143 |\u001b[39m         \u001b[36mawait\u001b[39m expect(checkout\u001b[33m.\u001b[39msuccessMessage)\u001b[33m.\u001b[39mtoBeHidden()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 144 |\u001b[39m       }\n \u001b[90m 145 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 146 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                            "column": 47,
+                            "line": 143
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeHidden\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText('✅')\nExpected: hidden\nReceived: visible\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeHidden\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText('✅')\u001b[22m\n\u001b[2m    17 × locator resolved to <p>✅ Áp dụng thành công! Giảm 10%</p>\u001b[22m\n\u001b[2m       - unexpected value \"visible\"\u001b[22m\n\n\n  141 |\n  142 |         // ...and no discount may be displayed.\n> 143 |         await expect(checkout.successMessage).toBeHidden();\n      |                                               ^\n  144 |       }\n  145 |     });\n  146 |   }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js:143:47"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:18.828Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:18.839Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 C4 (yeu cau JWT hop le)"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-09"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3+P5"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "B14-apply-coupon-response.json",
+                          "contentType": "application/json",
+                          "body": "ewogICJzdGF0dXMiOiAyMDAsCiAgImJvZHkiOiB7CiAgICAic3VjY2VzcyI6IHRydWUsCiAgICAiY291cG9uX2lkIjogMSwKICAgICJkaXNjb3VudF9hbW91bnQiOiAtMzYwMDAwMCwKICAgICJmaW5hbF9hbW91bnQiOiA0MDAwMDAwLAogICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSAxMCUiCiAgfQp9"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-1991b-R-09-C4-yeu-cau-JWT-hop-le--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-1991b-R-09-C4-yeu-cau-JWT-hop-le--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-1991b-R-09-C4-yeu-cau-JWT-hop-le--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr09-coupon-Discount-coupo-1991b-R-09-C4-yeu-cau-JWT-hop-le--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr09-coupon.spec.js",
+                        "column": 47,
+                        "line": 143
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-b8492d7e24e837641416",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B15 [positive] Doi tong tien sau khi ap ma: khong duoc giu lai giam gia cu (FR-08 tong tien tinh tu dong)",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:30.522Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-08 tong tien tinh tu dong"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-15"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P3"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4260,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:30.490Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:30.522Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-08 tong tien tinh tu dong"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-15"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P3"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-cd4b46b0cc87591c76c0",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "B16 [positive] So tien hien thi tren UI phai bang final_amount tra ve tu API (FR-09 hien thi dung final_amount)",
+              "ok": true,
+              "tags": [
+                "FR-09"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:46:35.579Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-09 hien thi dung final_amount"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-09 DT-16"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P5"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:46:35.572Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:46:35.579Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-09 hien thi dung final_amount"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-09 DT-16"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P5"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "4763e1e72eb39689c491-179a45495b13625af7f0",
+              "file": "fr09-coupon.spec.js",
+              "line": 27,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-10T23:45:03.056Z",
+    "duration": 96338.862,
+    "expected": 11,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

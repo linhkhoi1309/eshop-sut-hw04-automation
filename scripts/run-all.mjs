@@ -123,6 +123,9 @@ const totals = summary.runs.reduce(
   { executions: 0, passed: 0, failed: 0, skipped: 0 },
 );
 summary.totals = { ...totals, browserRuns: summary.runs.length };
+// `generatedAt` is set when the batch STARTS (it is the object's creation time), so record the
+// end explicitly rather than letting the landing page imply the wrong one.
+summary.completedAt = new Date().toISOString();
 
 writeFileSync('reports/summary.json', JSON.stringify(summary, null, 2));
 console.log('\n===== SUMMARY =====');

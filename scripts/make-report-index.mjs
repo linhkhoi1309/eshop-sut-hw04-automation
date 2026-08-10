@@ -77,7 +77,9 @@ const html = `<!doctype html>
     <h1>Run by: ${esc(summary.runBy)}</h1>
     <div class="meta">
       HW04 — AI Automation Testing · EShop SUT · Playwright multi-browser execution<br>
-      Index generated at <code>${esc(summary.generatedAt)}</code> (ISO 8601, UTC)<br>
+      Batch started <code>${esc(summary.generatedAt)}</code>${
+        summary.completedAt ? ` · finished <code>${esc(summary.completedAt)}</code>` : ''
+      } (ISO 8601, UTC)<br>
       ${summary.runs.length} browser runs · 3 features × 3 engines · each report below carries the
       same <code>Run by: ${esc(summary.runBy)}</code> header and its own ISO start timestamp.
     </div>

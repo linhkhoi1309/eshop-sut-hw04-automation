@@ -1,0 +1,1932 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--project=firefox",
+      "--grep",
+      "@FR-05"
+    ],
+    "configFile": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\playwright.config.js",
+    "rootDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "Run by": "23127396",
+      "Student ID": "23127396",
+      "Student name": "Luong Linh Khoi",
+      "Feature": "FR-05",
+      "Run at (ISO)": "2026-08-10T23:40:20.849Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-05",
+          "Run at (ISO)": "2026-08-10T23:40:20.849Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-05",
+          "Run at (ISO)": "2026-08-10T23:40:20.849Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "Run by": "23127396",
+          "Student ID": "23127396",
+          "Student name": "Luong Linh Khoi",
+          "Feature": "FR-05",
+          "Run at (ISO)": "2026-08-10T23:40:20.849Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Khoi/Downloads/23127396_HW04_AI_Automation_090/hw04/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "reports/FR-05-firefox",
+          "open": "never",
+          "title": "Run by: 23127396 — FR-05 — 2026-08-10T23:40:20.849Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/FR-05-firefox/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "fr05-search.spec.js",
+      "file": "fr05-search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Product listing & search",
+          "file": "fr05-search.spec.js",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A01 [positive] Trang chu hien thi day du 5 san pham dang luoi (FR-05 R1)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:22.274Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R1"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4437,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:22.196Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:22.274Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R1"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-166cfc344040a904a121",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A02 [positive] Moi the san pham co anh ten va gia (FR-05 R2)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:28.027Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R2"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1+P4+P6"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:28.017Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:28.027Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R2"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1+P4+P6"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-71d3af4abdc1d81d453d",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A03 [positive] Tim kiem chinh xac ten day du tra ve dung 1 san pham (FR-05 R3)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:31.237Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:31.227Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:31.237Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-ff2e61510f4af3cbda0f",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A04 [positive] Tim kiem mot phan ten tra ve MacBook Pro M3 (FR-05 R3)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:34.537Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3275,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:34.526Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:34.537Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-865d97da5b84f0fcc1b3",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A05 [positive] Tim kiem khong phan biet hoa thuong (FR-05 R3)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:37.833Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-02"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:37.822Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:37.833Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-02"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-32f3b9ca2c857c16bd50",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A06 [positive] Tim kiem tieng Viet co dau (FR-05 R3)",
+              "ok": true,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:41.121Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-03"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3236,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:41.104Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:41.121Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-03"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-5d48fb39f305765bf80a",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A07 [negative] Khong co ket qua phai hien thi thong bao empty state (FR-05 R6)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:44.371Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R6"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-06"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2+P3"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10536,
+                      "error": {
+                        "message": "Error: FR-05 R6: a no-result search must show an empty-state message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R6: a no-result search must show an empty-state message with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\u001b[22m\n",
+                        "stack": "Error: FR-05 R6: a no-result search must show an empty-state message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R6: a no-result search must show an empty-state message with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:65:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 13,
+                          "line": 65
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 63 |\u001b[39m             home\u001b[33m.\u001b[39memptyState\u001b[33m,\u001b[39m\n \u001b[90m 64 |\u001b[39m             \u001b[32m'FR-05 R6: a no-result search must show an empty-state message'\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m           )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m         }\n \u001b[90m 68 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 13,
+                            "line": 65
+                          },
+                          "message": "Error: FR-05 R6: a no-result search must show an empty-state message\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R6: a no-result search must show an empty-state message with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/không tìm thấy|không có kết quả|không có sản phẩm|no results|trống/i)\u001b[22m\n\n\n  63 |             home.emptyState,\n  64 |             'FR-05 R6: a no-result search must show an empty-state message',\n> 65 |           ).toBeVisible();\n     |             ^\n  66 |           break;\n  67 |         }\n  68 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:65:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:44.364Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:44.371Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R6"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-06"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2+P3"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-c4a04-g-bao-empty-state-FR-05-R6--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-c4a04-g-bao-empty-state-FR-05-R6--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-c4a04-g-bao-empty-state-FR-05-R6--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-c4a04-g-bao-empty-state-FR-05-R6--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 13,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-13b372b80f914164a8e7",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A08 [edge] Ky tu % phai duoc hieu theo nghia den nen tra ve 0 ket qua (FR-05 R3 + SEC-05)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:40:57.269Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3 + SEC-05"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 BVA-10"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11966,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    17 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    17 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 43,
+                          "line": 49
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m         \u001b[36mcase\u001b[39m \u001b[32m'result_count'\u001b[39m\u001b[33m:\u001b[39m {\n \u001b[90m 48 |\u001b[39m           \u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39msearchAndWait(row\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m           \u001b[36mawait\u001b[39m expect(home\u001b[33m.\u001b[39mproductNames)\u001b[33m.\u001b[39mtoHaveCount(\u001b[33mNumber\u001b[39m(row\u001b[33m.\u001b[39mexpected_count))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[36mconst\u001b[39m expectedNames \u001b[33m=\u001b[39m splitList(row\u001b[33m.\u001b[39mexpected_names)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m           \u001b[36mif\u001b[39m (expectedNames\u001b[33m.\u001b[39mlength) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 43,
+                            "line": 49
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    17 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n\n\n  47 |         case 'result_count': {\n  48 |           await home.searchAndWait(row.input);\n> 49 |           await expect(home.productNames).toHaveCount(Number(row.expected_count));\n     |                                           ^\n  50 |\n  51 |           const expectedNames = splitList(row.expected_names);\n  52 |           if (expectedNames.length) {\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:40:57.203Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:40:57.269Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3 + SEC-05"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 BVA-10"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8ab5e--0-ket-qua-FR-05-R3-SEC-05--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8ab5e--0-ket-qua-FR-05-R3-SEC-05--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8ab5e--0-ket-qua-FR-05-R3-SEC-05--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8ab5e--0-ket-qua-FR-05-R3-SEC-05--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 43,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-95221e285f59af57e402",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A09 [edge] Ky tu _ phai duoc hieu theo nghia den nen tra ve 0 ket qua (FR-05 R3 + SEC-05)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:41:12.224Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3 + SEC-05"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 BVA-11"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11074,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 43,
+                          "line": 49
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m         \u001b[36mcase\u001b[39m \u001b[32m'result_count'\u001b[39m\u001b[33m:\u001b[39m {\n \u001b[90m 48 |\u001b[39m           \u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39msearchAndWait(row\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m           \u001b[36mawait\u001b[39m expect(home\u001b[33m.\u001b[39mproductNames)\u001b[33m.\u001b[39mtoHaveCount(\u001b[33mNumber\u001b[39m(row\u001b[33m.\u001b[39mexpected_count))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[36mconst\u001b[39m expectedNames \u001b[33m=\u001b[39m splitList(row\u001b[33m.\u001b[39mexpected_names)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m           \u001b[36mif\u001b[39m (expectedNames\u001b[33m.\u001b[39mlength) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 43,
+                            "line": 49
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  47 |         case 'result_count': {\n  48 |           await home.searchAndWait(row.input);\n> 49 |           await expect(home.productNames).toHaveCount(Number(row.expected_count));\n     |                                           ^\n  50 |\n  51 |           const expectedNames = splitList(row.expected_names);\n  52 |           if (expectedNames.length) {\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:41:12.177Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:41:12.224Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3 + SEC-05"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 BVA-11"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-f969d--0-ket-qua-FR-05-R3-SEC-05--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-f969d--0-ket-qua-FR-05-R3-SEC-05--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-f969d--0-ket-qua-FR-05-R3-SEC-05--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-f969d--0-ket-qua-FR-05-R3-SEC-05--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 43,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-5ccd317da84edd3c9f89",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A10 [edge] Chuoi SQL injection phai duoc tim theo nghia den (FR-05 R3 + SEC-05)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:41:28.108Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R3 + SEC-05"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-12"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11185,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 43,
+                          "line": 49
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 47 |\u001b[39m         \u001b[36mcase\u001b[39m \u001b[32m'result_count'\u001b[39m\u001b[33m:\u001b[39m {\n \u001b[90m 48 |\u001b[39m           \u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39msearchAndWait(row\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m           \u001b[36mawait\u001b[39m expect(home\u001b[33m.\u001b[39mproductNames)\u001b[33m.\u001b[39mtoHaveCount(\u001b[33mNumber\u001b[39m(row\u001b[33m.\u001b[39mexpected_count))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m\n \u001b[90m 51 |\u001b[39m           \u001b[36mconst\u001b[39m expectedNames \u001b[33m=\u001b[39m splitList(row\u001b[33m.\u001b[39mexpected_names)\u001b[33m;\u001b[39m\n \u001b[90m 52 |\u001b[39m           \u001b[36mif\u001b[39m (expectedNames\u001b[33m.\u001b[39mlength) {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 43,
+                            "line": 49
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 2 })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m5\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 2 })\u001b[22m\n\u001b[2m    18 × locator resolved to 5 elements\u001b[22m\n\u001b[2m       - unexpected value \"5\"\u001b[22m\n\n\n  47 |         case 'result_count': {\n  48 |           await home.searchAndWait(row.input);\n> 49 |           await expect(home.productNames).toHaveCount(Number(row.expected_count));\n     |                                           ^\n  50 |\n  51 |           const expectedNames = splitList(row.expected_names);\n  52 |           if (expectedNames.length) {\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:49:43"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:41:28.069Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:41:28.108Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R3 + SEC-05"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-12"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-3fbd9--nghia-den-FR-05-R3-SEC-05--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-3fbd9--nghia-den-FR-05-R3-SEC-05--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-3fbd9--nghia-den-FR-05-R3-SEC-05--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-3fbd9--nghia-den-FR-05-R3-SEC-05--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 43,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-871cc8ca699e85d3a6df",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A11 [negative] Tu khoa chua the script phai hien thi nhu van ban thuan (FR-05 R4 + SEC-04)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:41:42.403Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R4 + SEC-04"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-10"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P1"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3891,
+                      "error": {
+                        "message": "Error: FR-05 R4 / SEC-04: the term must be displayed as literal text\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"<script>alert(1)</script>\"\u001b[39m\nReceived string:    \u001b[31m\"Kết quả tìm kiếm cho:\"\u001b[39m",
+                        "stack": "Error: FR-05 R4 / SEC-04: the term must be displayed as literal text\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"<script>alert(1)</script>\"\u001b[39m\nReceived string:    \u001b[31m\"Kết quả tìm kiếm cho:\"\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:86:14",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 14,
+                          "line": 86
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m           expect\n \u001b[90m 85 |\u001b[39m             \u001b[33m.\u001b[39msoft(echoText\u001b[33m,\u001b[39m \u001b[32m'FR-05 R4 / SEC-04: the term must be displayed as literal text'\u001b[39m)\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m             \u001b[33m.\u001b[39mtoContain(row\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m\n \u001b[90m 88 |\u001b[39m           \u001b[36mconst\u001b[39m injected \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39msearchEcho\u001b[33m.\u001b[39mlocator(\u001b[32m'script, img, b, i, svg'\u001b[39m)\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 89 |\u001b[39m           expect\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 14,
+                            "line": 86
+                          },
+                          "message": "Error: FR-05 R4 / SEC-04: the term must be displayed as literal text\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"<script>alert(1)</script>\"\u001b[39m\nReceived string:    \u001b[31m\"Kết quả tìm kiếm cho:\"\u001b[39m\n\n  84 |           expect\n  85 |             .soft(echoText, 'FR-05 R4 / SEC-04: the term must be displayed as literal text')\n> 86 |             .toContain(row.input);\n     |              ^\n  87 |\n  88 |           const injected = await home.searchEcho.locator('script, img, b, i, svg').count();\n  89 |           expect\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:86:14"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 14,
+                            "line": 91
+                          },
+                          "message": "Error: payload markup was parsed into DOM elements: Kết quả tìm kiếm cho: <span><script>alert(1)</script></span>\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n  89 |           expect\n  90 |             .soft(injected, `payload markup was parsed into DOM elements: ${echoHtml}`)\n> 91 |             .toBe(0);\n     |              ^\n  92 |           break;\n  93 |         }\n  94 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:91:14"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:41:42.359Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:41:42.403Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R4 + SEC-04"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-10"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P1"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "A11-search-echo.html",
+                          "contentType": "text/html",
+                          "body": "S+G6v3QgcXXhuqMgdMOsbSBraeG6v20gY2hvOiA8c3Bhbj48c2NyaXB0PmFsZXJ0KDEpPC9zY3JpcHQ+PC9zcGFuPg=="
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8a0db--ban-thuan-FR-05-R4-SEC-04--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8a0db--ban-thuan-FR-05-R4-SEC-04--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8a0db--ban-thuan-FR-05-R4-SEC-04--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-8a0db--ban-thuan-FR-05-R4-SEC-04--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 14,
+                        "line": 86
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-f3beeb2f9e3aa19566e6",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A12 [negative] Payload XSS chu dong khong duoc thuc thi (FR-05 R4 + SEC-04)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:41:51.519Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R4 + SEC-04"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-10"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P7"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3995,
+                      "error": {
+                        "message": "Error: attacker-controlled JS executed from the search term\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                        "stack": "Error: attacker-controlled JS executed from the search term\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:103:84",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 84,
+                          "line": 103
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 101 |\u001b[39m           \u001b[90m// instead of alert() on purpose: a native dialog would block the whole run.\u001b[39m\n \u001b[90m 102 |\u001b[39m           \u001b[36mconst\u001b[39m executed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mevaluate(() \u001b[33m=>\u001b[39m \u001b[33mBoolean\u001b[39m(window\u001b[33m.\u001b[39m__xssExecuted))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m           expect(executed\u001b[33m,\u001b[39m \u001b[32m'attacker-controlled JS executed from the search term'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m         }\n \u001b[90m 106 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 103
+                          },
+                          "message": "Error: attacker-controlled JS executed from the search term\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  101 |           // instead of alert() on purpose: a native dialog would block the whole run.\n  102 |           const executed = await page.evaluate(() => Boolean(window.__xssExecuted));\n> 103 |           expect(executed, 'attacker-controlled JS executed from the search term').toBe(false);\n      |                                                                                    ^\n  104 |           break;\n  105 |         }\n  106 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:103:84"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:41:51.459Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:41:51.519Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R4 + SEC-04"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-10"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P7"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-b385e-c-thuc-thi-FR-05-R4-SEC-04--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-b385e-c-thuc-thi-FR-05-R4-SEC-04--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-b385e-c-thuc-thi-FR-05-R4-SEC-04--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-b385e-c-thuc-thi-FR-05-R4-SEC-04--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 84,
+                        "line": 103
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-7d681ca5eba97e6af0ea",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A13 [gui] Gia phai dung ky hieu dong va phan cach hang nghin (FR-05 R2 + FR-21)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:41:59.210Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R2 + FR-21"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P6"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4003,
+                      "error": {
+                        "message": "Error: FR-21: \"iPhone 15 Pro Max\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"30,000,000 VND\"\u001b[39m",
+                        "stack": "Error: FR-21: \"iPhone 15 Pro Max\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"30,000,000 VND\"\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 84,
+                          "line": 114
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 112 |\u001b[39m           \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m name \u001b[36mof\u001b[39m names) {\n \u001b[90m 113 |\u001b[39m             \u001b[36mconst\u001b[39m priceText \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39mpriceOf(name)\u001b[33m.\u001b[39minnerText())\u001b[33m.\u001b[39mtrim()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 114 |\u001b[39m             expect\u001b[33m.\u001b[39msoft(priceText\u001b[33m,\u001b[39m \u001b[32m`FR-21: \"${name}\" price must use the ₫ symbol`\u001b[39m)\u001b[33m.\u001b[39mtoMatch(\u001b[35m/₫/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 115 |\u001b[39m             expect\n \u001b[90m 116 |\u001b[39m               \u001b[33m.\u001b[39msoft(priceText\u001b[33m,\u001b[39m \u001b[32m`FR-05 R2: \"${name}\" price must use thousand separators`\u001b[39m)\n \u001b[90m 117 |\u001b[39m               \u001b[33m.\u001b[39mtoMatch(\u001b[35m/\\d{1,3}([.,]\\d{3})+/\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 114
+                          },
+                          "message": "Error: FR-21: \"iPhone 15 Pro Max\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"30,000,000 VND\"\u001b[39m\n\n  112 |           for (const name of names) {\n  113 |             const priceText = (await home.priceOf(name).innerText()).trim();\n> 114 |             expect.soft(priceText, `FR-21: \"${name}\" price must use the ₫ symbol`).toMatch(/₫/);\n      |                                                                                    ^\n  115 |             expect\n  116 |               .soft(priceText, `FR-05 R2: \"${name}\" price must use thousand separators`)\n  117 |               .toMatch(/\\d{1,3}([.,]\\d{3})+/);\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 114
+                          },
+                          "message": "Error: FR-21: \"Samsung Galaxy S24 Ultra\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"28,000,000 VND\"\u001b[39m\n\n  112 |           for (const name of names) {\n  113 |             const priceText = (await home.priceOf(name).innerText()).trim();\n> 114 |             expect.soft(priceText, `FR-21: \"${name}\" price must use the ₫ symbol`).toMatch(/₫/);\n      |                                                                                    ^\n  115 |             expect\n  116 |               .soft(priceText, `FR-05 R2: \"${name}\" price must use thousand separators`)\n  117 |               .toMatch(/\\d{1,3}([.,]\\d{3})+/);\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 114
+                          },
+                          "message": "Error: FR-21: \"MacBook Pro M3\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"45,000,000 VND\"\u001b[39m\n\n  112 |           for (const name of names) {\n  113 |             const priceText = (await home.priceOf(name).innerText()).trim();\n> 114 |             expect.soft(priceText, `FR-21: \"${name}\" price must use the ₫ symbol`).toMatch(/₫/);\n      |                                                                                    ^\n  115 |             expect\n  116 |               .soft(priceText, `FR-05 R2: \"${name}\" price must use thousand separators`)\n  117 |               .toMatch(/\\d{1,3}([.,]\\d{3})+/);\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 114
+                          },
+                          "message": "Error: FR-21: \"Tai nghe AirPods Pro 2\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"6,000,000 VND\"\u001b[39m\n\n  112 |           for (const name of names) {\n  113 |             const priceText = (await home.priceOf(name).innerText()).trim();\n> 114 |             expect.soft(priceText, `FR-21: \"${name}\" price must use the ₫ symbol`).toMatch(/₫/);\n      |                                                                                    ^\n  115 |             expect\n  116 |               .soft(priceText, `FR-05 R2: \"${name}\" price must use thousand separators`)\n  117 |               .toMatch(/\\d{1,3}([.,]\\d{3})+/);\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 84,
+                            "line": 114
+                          },
+                          "message": "Error: FR-21: \"Bàn phím cơ Keychron Q1\" price must use the ₫ symbol\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoMatch\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected pattern: \u001b[32m/₫/\u001b[39m\nReceived string:  \u001b[31m\"4,000,000 VND\"\u001b[39m\n\n  112 |           for (const name of names) {\n  113 |             const priceText = (await home.priceOf(name).innerText()).trim();\n> 114 |             expect.soft(priceText, `FR-21: \"${name}\" price must use the ₫ symbol`).toMatch(/₫/);\n      |                                                                                    ^\n  115 |             expect\n  116 |               .soft(priceText, `FR-05 R2: \"${name}\" price must use thousand separators`)\n  117 |               .toMatch(/\\d{1,3}([.,]\\d{3})+/);\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:114:84"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:41:59.173Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:41:59.210Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R2 + FR-21"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P6"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-4ab24--hang-nghin-FR-05-R2-FR-21--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-4ab24--hang-nghin-FR-05-R2-FR-21--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-4ab24--hang-nghin-FR-05-R2-FR-21--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-4ab24--hang-nghin-FR-05-R2-FR-21--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 84,
+                        "line": 114
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-f152fa09ca75523f325a",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A14 [gui] Trang chu chi duoc co dung mot the h1 (FR-05 R7 + FR-21)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:42:06.123Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R7 + FR-21"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P2"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10754,
+                      "error": {
+                        "message": "Error: FR-05 R7: home page must have exactly one <h1>\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-05 R7: home page must have exactly one <h1> with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    17 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n",
+                        "stack": "Error: FR-05 R7: home page must have exactly one <h1>\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-05 R7: home page must have exactly one <h1> with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    17 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:124:86",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 86,
+                          "line": 124
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 122 |\u001b[39m         \u001b[90m/** P2 — exactly one <h1>, in the listing state and after searching (R7). */\u001b[39m\n \u001b[90m 123 |\u001b[39m         \u001b[36mcase\u001b[39m \u001b[32m'single_h1'\u001b[39m\u001b[33m:\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 124 |\u001b[39m           \u001b[36mawait\u001b[39m expect(home\u001b[33m.\u001b[39mallH1\u001b[33m,\u001b[39m \u001b[32m'FR-05 R7: home page must have exactly one <h1>'\u001b[39m)\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m1\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 125 |\u001b[39m           \u001b[36mawait\u001b[39m home\u001b[33m.\u001b[39msearchAndWait(row\u001b[33m.\u001b[39minput)\u001b[33m;\u001b[39m\n \u001b[90m 126 |\u001b[39m           \u001b[36mawait\u001b[39m expect(\n \u001b[90m 127 |\u001b[39m             home\u001b[33m.\u001b[39mallH1\u001b[33m,\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 86,
+                            "line": 124
+                          },
+                          "message": "Error: FR-05 R7: home page must have exactly one <h1>\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  7000ms\n\nCall log:\n\u001b[2m  - FR-05 R7: home page must have exactly one <h1> with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    17 × locator resolved to 2 elements\u001b[22m\n\u001b[2m       - unexpected value \"2\"\u001b[22m\n\n\n  122 |         /** P2 — exactly one <h1>, in the listing state and after searching (R7). */\n  123 |         case 'single_h1': {\n> 124 |           await expect(home.allH1, 'FR-05 R7: home page must have exactly one <h1>').toHaveCount(1);\n      |                                                                                      ^\n  125 |           await home.searchAndWait(row.input);\n  126 |           await expect(\n  127 |             home.allH1,\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:124:86"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:42:06.086Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:42:06.123Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R7 + FR-21"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P2"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-75fe0--mot-the-h1-FR-05-R7-FR-21--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-75fe0--mot-the-h1-FR-05-R7-FR-21--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-75fe0--mot-the-h1-FR-05-R7-FR-21--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-75fe0--mot-the-h1-FR-05-R7-FR-21--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 86,
+                        "line": 124
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-b6deb087271f44e30974",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A15 [gui] Moi anh san pham phai co thuoc tinh alt mo ta (FR-05 R2 + FR-24)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:42:19.153Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R2 + FR-24"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-01"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P4"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4008,
+                      "error": {
+                        "message": "Error: FR-24: image #1 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: FR-24: image #1 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 82,
+                          "line": 140
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 138 |\u001b[39m           \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m \u001b[33mNumber\u001b[39m(row\u001b[33m.\u001b[39mexpected_count)\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n \u001b[90m 139 |\u001b[39m             \u001b[36mconst\u001b[39m alt \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m images\u001b[33m.\u001b[39mnth(i)\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'alt'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 140 |\u001b[39m             expect\u001b[33m.\u001b[39msoft(alt\u001b[33m,\u001b[39m \u001b[32m`FR-24: image #${i + 1} must have a non-empty alt`\u001b[39m)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 141 |\u001b[39m           }\n \u001b[90m 142 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 143 |\u001b[39m         }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 82,
+                            "line": 140
+                          },
+                          "message": "Error: FR-24: image #1 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n  138 |           for (let i = 0; i < Number(row.expected_count); i++) {\n  139 |             const alt = await images.nth(i).getAttribute('alt');\n> 140 |             expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();\n      |                                                                                  ^\n  141 |           }\n  142 |           break;\n  143 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 82,
+                            "line": 140
+                          },
+                          "message": "Error: FR-24: image #2 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n  138 |           for (let i = 0; i < Number(row.expected_count); i++) {\n  139 |             const alt = await images.nth(i).getAttribute('alt');\n> 140 |             expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();\n      |                                                                                  ^\n  141 |           }\n  142 |           break;\n  143 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 82,
+                            "line": 140
+                          },
+                          "message": "Error: FR-24: image #3 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n  138 |           for (let i = 0; i < Number(row.expected_count); i++) {\n  139 |             const alt = await images.nth(i).getAttribute('alt');\n> 140 |             expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();\n      |                                                                                  ^\n  141 |           }\n  142 |           break;\n  143 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 82,
+                            "line": 140
+                          },
+                          "message": "Error: FR-24: image #4 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n  138 |           for (let i = 0; i < Number(row.expected_count); i++) {\n  139 |             const alt = await images.nth(i).getAttribute('alt');\n> 140 |             expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();\n      |                                                                                  ^\n  141 |           }\n  142 |           break;\n  143 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 82,
+                            "line": 140
+                          },
+                          "message": "Error: FR-24: image #5 must have a non-empty alt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m\"\"\u001b[39m\n\n  138 |           for (let i = 0; i < Number(row.expected_count); i++) {\n  139 |             const alt = await images.nth(i).getAttribute('alt');\n> 140 |             expect.soft(alt, `FR-24: image #${i + 1} must have a non-empty alt`).toBeTruthy();\n      |                                                                                  ^\n  141 |           }\n  142 |           break;\n  143 |         }\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:140:82"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:42:19.099Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:42:19.153Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R2 + FR-24"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-01"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P4"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-69897-h-alt-mo-ta-FR-05-R2-FR-24--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-69897-h-alt-mo-ta-FR-05-R2-FR-24--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-69897-h-alt-mo-ta-FR-05-R2-FR-24--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-69897-h-alt-mo-ta-FR-05-R2-FR-24--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 82,
+                        "line": 140
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-6b167fc2c95f0989fb6f",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            },
+            {
+              "title": "A16 [edge] Phai hien thi trang thai loading khi dang tai du lieu (FR-05 R5)",
+              "ok": false,
+              "tags": [
+                "FR-05"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "Run by",
+                      "description": "23127396"
+                    },
+                    {
+                      "type": "Run at (ISO)",
+                      "description": "2026-08-10T23:42:27.546Z"
+                    },
+                    {
+                      "type": "Spec",
+                      "description": "FR-05 R5"
+                    },
+                    {
+                      "type": "HW02 case",
+                      "description": "FR-05 DT-07"
+                    },
+                    {
+                      "type": "Assertion pattern",
+                      "description": "P3"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11205,
+                      "error": {
+                        "message": "Error: FR-05 R5: a loading state must be shown while products are being fetched\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/đang tải|loading|vui lòng chờ/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R5: a loading state must be shown while products are being fetched with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/đang tải|loading|vui lòng chờ/i)\u001b[22m\n",
+                        "stack": "Error: FR-05 R5: a loading state must be shown while products are being fetched\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/đang tải|loading|vui lòng chờ/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R5: a loading state must be shown while products are being fetched with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/đang tải|loading|vui lòng chờ/i)\u001b[22m\n\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:152:13",
+                        "location": {
+                          "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                          "column": 13,
+                          "line": 152
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 150 |\u001b[39m             home\u001b[33m.\u001b[39mloadingState\u001b[33m,\u001b[39m\n \u001b[90m 151 |\u001b[39m             \u001b[32m'FR-05 R5: a loading state must be shown while products are being fetched'\u001b[39m\u001b[33m,\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 152 |\u001b[39m           )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 153 |\u001b[39m           \u001b[36mbreak\u001b[39m\u001b[33m;\u001b[39m\n \u001b[90m 154 |\u001b[39m         }\n \u001b[90m 155 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                            "column": 13,
+                            "line": 152
+                          },
+                          "message": "Error: FR-05 R5: a loading state must be shown while products are being fetched\n\n\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/đang tải|loading|vui lòng chờ/i)\nExpected: visible\nTimeout: 7000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - FR-05 R5: a loading state must be shown while products are being fetched with timeout 7000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/đang tải|loading|vui lòng chờ/i)\u001b[22m\n\n\n  150 |             home.loadingState,\n  151 |             'FR-05 R5: a loading state must be shown while products are being fetched',\n> 152 |           ).toBeVisible();\n      |             ^\n  153 |           break;\n  154 |         }\n  155 |\n    at C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js:152:13"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-10T23:42:27.484Z",
+                      "annotations": [
+                        {
+                          "type": "Run by",
+                          "description": "23127396"
+                        },
+                        {
+                          "type": "Run at (ISO)",
+                          "description": "2026-08-10T23:42:27.546Z"
+                        },
+                        {
+                          "type": "Spec",
+                          "description": "FR-05 R5"
+                        },
+                        {
+                          "type": "HW02 case",
+                          "description": "FR-05 DT-07"
+                        },
+                        {
+                          "type": "Assertion pattern",
+                          "description": "P3"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-7dde4--dang-tai-du-lieu-FR-05-R5--firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-7dde4--dang-tai-du-lieu-FR-05-R5--firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-7dde4--dang-tai-du-lieu-FR-05-R5--firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\test-results\\fr05-search-Product-listin-7dde4--dang-tai-du-lieu-FR-05-R5--firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Khoi\\Downloads\\23127396_HW04_AI_Automation_090\\hw04\\tests\\fr05-search.spec.js",
+                        "column": 13,
+                        "line": 152
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b4178e4a1fa4d88537ec-4bff224ad54761e99574",
+              "file": "fr05-search.spec.js",
+              "line": 22,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-10T23:40:20.856Z",
+    "duration": 139635.644,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

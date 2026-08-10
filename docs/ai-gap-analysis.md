@@ -111,11 +111,46 @@ change* against an auto-retrying assertion is a false-negative generator: the as
 "correct" in isolation, reads well in review, and silently inverts the meaning of the test. Every
 "nothing should happen" case in this suite was re-checked for the same shape afterwards.
 
+## G-09 · A `catch` written to tolerate failing tests hid the fact that no test ever ran
+
+**Produced:** the multi-browser runner spawned Playwright with
+`execFileSync('npx.cmd', ['playwright', 'test', …])`, wrapped in
+
+```js
+} catch {
+  // A non-zero exit just means some tests failed — expected on a deliberately-buggy SUT.
+}
+```
+
+**Wrong because:** since Node 18.20 / 20.12, `execFile` **refuses** to spawn a `.cmd` shim without
+`shell: true` (the fix for CVE-2024-27980). On Windows the call therefore threw instantly, every
+time — and the `catch`, written for an entirely reasonable purpose, swallowed it. The first official
+run produced no tests at all and failed several steps later with
+`ENOENT: … reports\FR-05-chromium\results.json`, which points at the *reporting* code rather than at
+the spawn that never happened.
+
+**Correction:** run the Playwright CLI module with the current `node` binary
+(`createRequire(import.meta.url).resolve('@playwright/test/cli')`) — no shell, no `PATH` lookup —
+and narrow the catch: a thrown error **without** a numeric `.status` means the process never started
+and is now fatal, while a non-zero exit stays tolerated. A missing `results.json` is also reported
+explicitly instead of surfacing as a stack trace.
+
+**Cause: model limitation.** Two failures compounding. The AI wrote the spawn idiom that was correct
+for older Node versions, and it wrote a `catch` whose *comment* states a narrow intent
+("some tests failed") while its *code* catches everything. That gap between the stated intent and
+the implemented behaviour is exactly the kind of thing that reads well in review — the comment
+explains itself convincingly — and it turned a loud, immediate failure into a silent one.
+
+**Worth noting:** the same shape appears in `scripts/capture-evidence.mjs`, where the first draft
+registered `waitForResponse` **after** the click that triggers it and timed out against a ~20 ms
+local API. That is G-04 recurring: the waiting discipline the AI applies rigorously inside the test
+suite was not carried into the scripts around it.
+
 ---
 
 ## Cross-cutting observation
 
-Five of the eight entries (G-01, G-03, G-04, G-07, G-08) share one shape: the AI produced something
+Six of the nine entries (G-01, G-03, G-04, G-07, G-08, G-09) share one shape: the AI produced something
 **structurally correct and plausible-looking** — a payload, a locator, a script, a negative case,
 an assertion — whose defect only shows up when you ask *"if the feature were broken, would this
 test actually notice?"*. Reviewing AI output for **discriminating power**, not for plausibility, is
@@ -126,3 +161,7 @@ while the very defect they were written to catch was occurring**. A suite full o
 like evidence of quality and is in fact evidence of nothing. This is why every failing case in this
 project was verified against the API or the DOM before being written up, and why the passing ones
 were re-examined too.
+
+G-09 extends the same question from tests to the tooling around them. *If this step silently did
+nothing, would anything notice?* An over-broad `catch` answers "no" — and an over-broad `catch`
+carrying a narrowly-worded comment answers "no" while looking, in review, like it answers "yes".
